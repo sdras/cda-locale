@@ -1,0 +1,38 @@
+{
+  "name": "cda-locale",
+  "version": "1.0.0",
+  "description": "Showing where all of the Node MS Cloud Developer Advocates will be speaking",
+  "author": "sdras <sarah.drasner@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@google/maps": "^0.4.3",
+    "@sdras/webgl-pkg": "^1.0.0",
+    "autoprefixer": "^7.1.4",
+    "babel-preset-env": "^1.6.0",
+    "gsap": "^1.20.2",
+    "nuxt": "^1.0.0-rc8",
+    "pug": "^2.0.0-rc.4",
+    "three": "^0.87.1",
+    "tween.js": "^16.6.0",
+    "vuex": "^2.4.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
