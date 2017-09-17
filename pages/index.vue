@@ -1,6 +1,5 @@
 <template>
   <div>
-    <globe></globe>
     <section class="container">
       <p>
         <nuxt-link to="/globe">Globe</nuxt-link>

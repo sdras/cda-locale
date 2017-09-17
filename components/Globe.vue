@@ -10,6 +10,9 @@
 
     <div id="title">
       World Population
+      <button @click="tryGeo">Try Me Out</button>
+      <p>{{ lat }} and {{ long }}</p>
+      <!-- <span v-for="data in speakerData">{{ data.Location }}</span> -->
     </div>
   </div>
 </template>
@@ -21,7 +24,9 @@ import { TweenMax, Sine, TimelineLite } from "gsap";
 export default {
   data() {
     return {
-      years: ['1990', '1995', '2000']
+      years: ['1990', '1995', '2000'],
+      lat: 'start',
+      long: 'start'
     }
   },
   methods: {
@@ -245,9 +250,7 @@ export default {
               if (this._baseGeometry.morphTargets.length < 8) {
                 console.log('t l', this._baseGeometry.morphTargets.length);
                 var padding = 8 - this._baseGeometry.morphTargets.length;
-                console.log('padding', padding);
                 for (var i = 0; i <= padding; i++) {
-                  console.log('padding', i);
                   this._baseGeometry.morphTargets.push({ 'name': 'morphPadding' + i, vertices: this._baseGeometry.vertices });
                 }
               }
@@ -423,7 +426,7 @@ export default {
 
       };
 
-      //break
+      // this particular implementation
 
       var years = ['1990', '1995', '2000'];
       var container = document.getElementById('container');
@@ -460,7 +463,6 @@ export default {
       var xhr;
       //TWEEN.start();
 
-
       xhr = new XMLHttpRequest();
       xhr.open('GET', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/population909500.json', true);
       xhr.onreadystatechange = function(e) {
@@ -479,9 +481,53 @@ export default {
         }
       };
       xhr.send(null);
+
+      // where are we getting the data (this.computedvalue)
+      // var data = JSON.parse(xhr.responseText);
+      // window.data = data;
+      // for (i = 0; i < data.length; i++) {
+      //   globe.addData(data[i][1], { format: 'magnitude', name: data[i][0], animated: true });
+      // }
+      // //create vertices
+      // globe.createPoints();
+      // settime(globe, 0)();
+      // globe.animate();
+      // document.body.style.backgroundImage = 'none'; // remove loading
+    },
+    tryGeo() {
+      let request = new XMLHttpRequest(),
+        city = 'Barcelona',
+        vueThis = this,
+        location;
+
+      request.open('GET', 'https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(city), true);
+      request.onload = function() {
+        if (request.status >= 200 && request.status < 400) {
+          // Success!
+          var data = JSON.parse(request.responseText);
+          location = data.results[0].geometry.location;
+
+          vueThis.lat = location.lat;
+          vueThis.long = location.lng
+
+        } else {
+          console.log('bummah. we reached the target server but it errored')
+        }
+      };
+      request.onerror = function() {
+        console.log('connection error! nooo')
+      };
+      request.send();
     }
   },
-  // mixins: [webglglobe],
+  computed: {
+    speakerData() {
+      return this.$store.state.speakerData;
+      // for each data.location
+      // map to the coordinates lat and long
+      // create array 2017, 2018, magnitude starts at 45
+    }
+  },
   mounted() {
     this.initGlobe();
   }

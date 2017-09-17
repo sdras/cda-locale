@@ -13,7 +13,7 @@ import Globe from '~/components/Globe.vue'
 export default {
   components: {
     Globe
-  }
+  },
 }
 </script>
 
@@ -29,7 +29,7 @@ body {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
+  color: white;
   letter-spacing: 1px;
 }
 
