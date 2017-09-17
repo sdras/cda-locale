@@ -410,26 +410,18 @@
   {
     "Name": "Sarah Drasner",
     "Conference": "Fullstack 2018 - Keynote",
-    "FromDate": "TBD",
-    "ToDate": "TBD",
+    "FromDate": "July 11 2018",
+    "ToDate": "July 13 2018",
     "Location": "London, UK",
     "Link":
       "https://skillsmatter.com/conferences/9815-fullstack-2018-the-conference-on-javascript-node-and-internet-of-things"
   },
   {
     "Name": "Sarah Drasner",
-    "Conference": "PixelUp",
-    "FromDate": "TBD",
-    "ToDate": "TBD",
-    "Location": "South Africa",
-    "Link": "https://pixelup.co.za/"
-  },
-  {
-    "Name": "Sarah Drasner",
-    "Conference": "Web Directions",
-    "FromDate": "TBD",
-    "ToDate": "TBD",
-    "Location": "Australia",
-    "Link": ""
+    "Conference": "JS Heroes",
+    "FromDate": "April 18 2017",
+    "ToDate": "April 21 2017",
+    "Location": "Romania",
+    "Link": "https://jsheroes.io/"
   }
 ]

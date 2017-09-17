@@ -11,7 +11,7 @@
     <div id="title">
       World Population
       <button @click="tryGeo">Try Me Out</button>
-      <p>{{ lat }} and {{ long }}</p>
+      <p>{{ temp }}</p>
       <!-- <span v-for="data in speakerData">{{ data.Location }}</span> -->
     </div>
   </div>
@@ -26,7 +26,9 @@ export default {
     return {
       years: ['1990', '1995', '2000'],
       lat: 'start',
-      long: 'start'
+      long: 'start',
+      temp: [],
+      mapData: [],
     }
   },
   methods: {
@@ -494,9 +496,9 @@ export default {
       // globe.animate();
       // document.body.style.backgroundImage = 'none'; // remove loading
     },
-    tryGeo() {
+    tryGeo(city) {
       let request = new XMLHttpRequest(),
-        city = 'Barcelona',
+        //city = 'Barcelona', - for debugging
         vueThis = this,
         location;
 
@@ -507,8 +509,11 @@ export default {
           var data = JSON.parse(request.responseText);
           location = data.results[0].geometry.location;
 
-          vueThis.lat = location.lat;
-          vueThis.long = location.lng
+          // debugging
+          // vueThis.lat = location.lat;
+          // vueThis.long = location.lng
+
+          vueThis.temp.push(location.lat, location.lng, 30);
 
         } else {
           console.log('bummah. we reached the target server but it errored')
@@ -518,18 +523,44 @@ export default {
         console.log('connection error! nooo')
       };
       request.send();
-    }
+    },
+    createJSON() {
+
+      this.speakerData.forEach((i) => {
+        let year = i.FromDate.substr(i.FromDate.length - 4),
+          place = i.Location;
+
+        this.tryGeo(place)
+      })
+
+      //       for each entry:
+      //   y = get the year
+      //   lat, long = get the lat long
+      //   if y in out:
+      //     out[y].push([lat, long, mag])
+      //   else:
+      //     out[y] = [lat, long, mag]
+
+
+      // { "2017": [....],
+      //   "2018": [....]}
+
+      // ["2017", [....], "2018", [...]]
+
+      // finalout = []
+      // for each key in out:
+      //    finalout.push(key, out[key])
+
+    },
   },
   computed: {
     speakerData() {
       return this.$store.state.speakerData;
-      // for each data.location
-      // map to the coordinates lat and long
-      // create array 2017, 2018, magnitude starts at 45
     }
   },
   mounted() {
     this.initGlobe();
+    this.createJSON();
   }
 }
 </script>
