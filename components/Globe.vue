@@ -10,8 +10,7 @@
 
     <div id="title">
       World Population
-      <button @click="tryGeo">Try Me Out</button>
-      <p>{{ temp }}</p>
+      <p>2017: {{ t2017 }} and 2018: {{ t2018 }}</p>
       <!-- <span v-for="data in speakerData">{{ data.Location }}</span> -->
     </div>
   </div>
@@ -27,7 +26,8 @@ export default {
       years: ['1990', '1995', '2000'],
       lat: 'start',
       long: 'start',
-      temp: [],
+      t2017: [],
+      t2018: [],
       mapData: [],
     }
   },
@@ -41,7 +41,7 @@ export default {
 
         var colorFn = opts.colorFn || function(x) {
           var c = new THREE.Color();
-          c.setHSL((0.6 - (x * 0.5)), 1.0, 0.5);
+          c.setHSL((0.5 - (x / 0.8)), 1.0, 0.5);
           return c;
         };
         var imgDir = opts.imgDir || '~/assets/';
@@ -496,24 +496,25 @@ export default {
       // globe.animate();
       // document.body.style.backgroundImage = 'none'; // remove loading
     },
-    tryGeo(city) {
+    tryGeo(dataI) {
       let request = new XMLHttpRequest(),
-        //city = 'Barcelona', - for debugging
         vueThis = this,
+        city = dataI.Location,
+        year = dataI.FromDate.substr(dataI.FromDate.length - 4),
         location;
 
       request.open('GET', 'https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(city), true);
       request.onload = function() {
         if (request.status >= 200 && request.status < 400) {
           // Success!
-          var data = JSON.parse(request.responseText);
+          const data = JSON.parse(request.responseText);
           location = data.results[0].geometry.location;
 
-          // debugging
-          // vueThis.lat = location.lat;
-          // vueThis.long = location.lng
-
-          vueThis.temp.push(location.lat, location.lng, 30);
+          if (year == '2017') {
+            vueThis.t2017.push(location.lat, location.lng, 30);
+          } else {
+            vueThis.t2018.push(location.lat, location.lng, 30);
+          }
 
         } else {
           console.log('bummah. we reached the target server but it errored')
@@ -524,33 +525,10 @@ export default {
       };
       request.send();
     },
-    createJSON() {
-
+    createIndex() {
       this.speakerData.forEach((i) => {
-        let year = i.FromDate.substr(i.FromDate.length - 4),
-          place = i.Location;
-
-        this.tryGeo(place)
+        this.tryGeo(i)
       })
-
-      //       for each entry:
-      //   y = get the year
-      //   lat, long = get the lat long
-      //   if y in out:
-      //     out[y].push([lat, long, mag])
-      //   else:
-      //     out[y] = [lat, long, mag]
-
-
-      // { "2017": [....],
-      //   "2018": [....]}
-
-      // ["2017", [....], "2018", [...]]
-
-      // finalout = []
-      // for each key in out:
-      //    finalout.push(key, out[key])
-
     },
   },
   computed: {
@@ -558,9 +536,30 @@ export default {
       return this.$store.state.speakerData;
     }
   },
+  watch: {
+    mapData() {
+      console.log(this.mapData)
+    }
+  },
   mounted() {
     this.initGlobe();
-    this.createJSON();
+    // this.createIndex().then(
+    //   this.mapData.push('2017', [this.t2017], '2018', [this.t2018])
+    // )
+
+    let myFirstPromise = new Promise((resolve, reject) => {
+      this.createIndex()
+    }).then(
+      this.mapData.push('2017', this.t2017, '2018', this.t2018)
+      ).then(
+      console.log('yoyoyo')
+      )
+
+    // myFirstPromise.then((successMessage) => {
+    //   // successMessage is whatever we passed in the resolve(...) function above.
+    //   // It doesn't have to be a string, but if it is only a succeed message, it probably will be.
+    //   console.log("Yay! " + successMessage);
+    // });
   }
 }
 </script>
