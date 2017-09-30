@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div class="tablecontain">
+    <p>You can sort the table by clicking on each heading</p>
     <table class="scroll">
       <thead>
         <tr>
@@ -42,6 +43,10 @@ td {
   padding: 5px 8px;
 }
 
+p {
+  color: #80B822;
+}
+
 tr:nth-child(2n) {
   background: rgba(255, 255, 255, 0.08);
 }
@@ -50,12 +55,16 @@ tr:nth-child(2n) {
   width: 100px;
 }
 
+.tablecontain {
+  margin: 50px 0 0 0;
+}
+
 table {
   width: 55vw;
   height: 100vh;
-  margin: 50px 0 0 0;
   position: relative;
   z-index: 300;
+  margin-top: 10px;
 }
 
 .scroll {

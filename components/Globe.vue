@@ -13,7 +13,6 @@
 
 <script>
 import * as THREE from 'three';
-// import { TweenMax, Sine, TimelineLite } from "gsap";
 
 export default {
   data() {
@@ -34,14 +33,13 @@ export default {
       DAT.Globe = function(container, opts) {
         opts = opts || {};
 
-        var colorFn = opts.colorFn || function(x) {
-          var c = new THREE.Color();
+        const colorFn = opts.colorFn || function(x) {
+          let c = new THREE.Color();
           c.setHSL((0.6 - (x * 0.35)), 1.0, 0.5);
           return c;
         };
-        var imgDir = opts.imgDir || '~/assets/';
 
-        var Shaders = {
+        const Shaders = {
           'earth': {
             uniforms: {
               'texture': { type: 't', value: null }
@@ -86,26 +84,22 @@ export default {
           }
         };
 
-        var camera, scene, renderer, w, h;
-        var mesh, atmosphere, point;
-
-        var overRenderer;
-
-        var curZoomSpeed = 0;
-        var zoomSpeed = 50;
-
-        var mouse = { x: 0, y: 0 }, mouseOnDown = { x: 0, y: 0 };
-        var rotation = { x: 0, y: 0 },
+        let camera, scene, renderer, w, h, mesh, atmosphere, point, overRenderer,
+          distance = 100000,
+          distanceTarget = 100000,
+          mouse = { x: 0, y: 0 },
+          mouseOnDown = { x: 0, y: 0 },
+          rotation = { x: 0, y: 0 },
           target = { x: Math.PI * 3 / 2, y: Math.PI / 6.0 },
           targetOnDown = { x: 0, y: 0 };
 
-        var distance = 100000, distanceTarget = 100000;
-        var padding = 40;
-        var PI_HALF = Math.PI / 2;
+        const curZoomSpeed = 0,
+          zoomSpeed = 50,
+          padding = 40,
+          PI_HALF = Math.PI / 2;
 
         function init() {
-
-          var shader, uniforms, material;
+          let shader, uniforms, material;
           w = container.offsetWidth || window.innerWidth / 2;
           h = container.offsetHeight || window.innerHeight / 1.5;
 
@@ -114,14 +108,11 @@ export default {
 
           scene = new THREE.Scene();
 
-          var geometry = new THREE.SphereGeometry(200, 40, 30);
+          let geometry = new THREE.SphereGeometry(200, 40, 30);
 
           shader = Shaders['earth'];
           uniforms = THREE.UniformsUtils.clone(shader.uniforms);
-
-          //uniforms['texture'].value = THREE.TextureLoader('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/world2.jpg');
           uniforms['texture'].value = imageLoad;
-          console.log(uniforms['texture'].value);
 
           material = new THREE.ShaderMaterial({
             uniforms: uniforms,
@@ -174,7 +165,7 @@ export default {
         }
 
         function addData(data, opts) {
-          var lat, lng, size, color, i, step, colorFnWrapper;
+          let lat, lng, size, color, i, step, colorFnWrapper;
 
           opts.animated = opts.animated || false;
           this.is_animated = opts.animated;
@@ -195,7 +186,6 @@ export default {
               for (i = 0; i < data.length; i += step) {
                 lat = data[i];
                 lng = data[i + 1];
-                //        size = data[i + 2];
                 color = colorFnWrapper(data, i);
                 size = 0;
                 addPoint(lat, lng, size, color, this._baseGeometry);
@@ -235,7 +225,6 @@ export default {
               }));
             } else {
               if (this._baseGeometry.morphTargets.length < 8) {
-                // console.log('t l', this._baseGeometry.morphTargets.length);
                 var padding = 8 - this._baseGeometry.morphTargets.length;
                 for (var i = 0; i <= padding; i++) {
                   this._baseGeometry.morphTargets.push({ 'name': 'morphPadding' + i, vertices: this._baseGeometry.vertices });
@@ -415,11 +404,11 @@ export default {
 
       // this particular implementation
 
+      // to be updated to held data
       var years = ['1990', '1995', '2000'];
       var container = document.getElementById('container');
       var globe = new DAT.Globe(container);
 
-      //console.log(globe);
       var i, tweens = [];
 
       var settime = function(globe, t) {
@@ -548,7 +537,7 @@ export default {
     //   ).then(
     //   console.log('yoyoyo')
     //   )
-    let earthmap = THREE.ImageUtils.loadTexture('/world.jpg');
+    let earthmap = THREE.TextureLoader('/world.jpg');
     this.initGlobe(earthmap);
   }
 }

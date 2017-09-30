@@ -1,7 +1,8 @@
 {
   "name": "cda-locale",
   "version": "1.0.0",
-  "description": "Showing where all of the Node MS Cloud Developer Advocates will be speaking",
+  "description":
+    "Showing where all of the Node MS Cloud Developer Advocates will be speaking",
   "author": "sdras <sarah.drasner@gmail.com>",
   "private": true,
   "scripts": {
@@ -14,10 +15,8 @@
   },
   "dependencies": {
     "@google/maps": "^0.4.3",
-    "@sdras/webgl-pkg": "^1.0.0",
     "autoprefixer": "^7.1.4",
     "babel-preset-env": "^1.6.0",
-    "gsap": "^1.20.2",
     "nuxt": "^1.0.0-rc8",
     "pug": "^2.0.0-rc.4",
     "three": "^0.87.1",
