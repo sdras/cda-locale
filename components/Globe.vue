@@ -1,6 +1,7 @@
 <template>
   <div>
     <div id="container"></div>
+    <!-- <p class="debugging">{{yearsArr}}</p> -->
 
     <div id="currentInfo">
       <span id="year1990" class="year">1990</span>
@@ -19,11 +20,6 @@ export default {
   data() {
     return {
       years: ['1990', '1995', '2000'],
-      lat: 'start',
-      long: 'start',
-      t2017: [],
-      t2018: [],
-      mapData: [],
     }
   },
   methods: {
@@ -419,7 +415,6 @@ export default {
       var container = document.getElementById('container');
       var globe = new DAT.Globe(container);
 
-      //console.log(globe);
       var i, tweens = [];
 
       var settime = function(globe, t) {
@@ -443,111 +438,60 @@ export default {
         y.addEventListener('mouseover', settime(globe, i), false);
       }
 
-      var xhr;
-      //TWEEN.start();
+      let data = this.yearsArr;
+      window.data = data;
+      for (i = 0; i < data.length; i++) {
+        globe.addData(data[i][1], { format: 'magnitude', name: data[i][0], animated: true });
+      }
+      globe.createPoints();
+      settime(globe, 0)();
+      globe.animate();
+      document.body.style.backgroundImage = 'none'; // remove loading
 
-      // xhr = new XMLHttpRequest();
-      // xhr.open('GET', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/speaking.json', true);
-      // xhr.onreadystatechange = function(e) {
-      //   if (xhr.readyState === 4) {
-      //     if (xhr.status === 200) {
-      //       var data = JSON.parse(xhr.responseText);
-      //       window.data = data;
-      //       for (i = 0; i < data.length; i++) {
-      //         globe.addData(data[i][1], { format: 'magnitude', name: data[i][0], animated: true });
-      //       }
-      //       globe.createPoints();
-      //       settime(globe, 0)();
-      //       globe.animate();
-      //       document.body.style.backgroundImage = 'none'; // remove loading
-      //     }
-      //   }
-      // };
-      // xhr.send(null);
-
-      xhr = new XMLHttpRequest();
-      xhr.open('GET', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/population909500.json', true);
-      xhr.onreadystatechange = function(e) {
-        if (xhr.readyState === 4) {
-          if (xhr.status === 200) {
-            var data = JSON.parse(xhr.responseText);
-            window.data = data;
-            for (i = 0; i < data.length; i++) {
-              globe.addData(data[i][1], { format: 'magnitude', name: data[i][0], animated: true });
-            }
-            globe.createPoints();
-            settime(globe, 0)();
-            globe.animate();
-            document.body.style.backgroundImage = 'none'; // remove loading
-          }
-        }
-      };
-      xhr.send(null);
-
-
-      // let data = this.mapData;
-      // window.data = data;
-      // for (i = 0; i < data.length; i++) {
-      //   globe.addData(data[i][1], { format: 'magnitude', name: data[i][0], animated: true });
-      // }
-      // globe.createPoints();
-      // settime(globe, 0)();
-      // globe.animate();
-      // document.body.style.backgroundImage = 'none'; // remove loading
-
-    },
-    tryGeo(dataI) {
-      let request = new XMLHttpRequest(),
-        vueThis = this,
-        city = dataI.Location,
-        year = dataI.From.substr(dataI.From.length - 4),
-        location;
-
-      request.open('GET', 'https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(city), true);
-      request.onload = function() {
-        if (request.status >= 200 && request.status < 400) {
-          // Success!
-          const data = JSON.parse(request.responseText);
-          location = data.results[0].geometry.location;
-
-          if (year == '2017') {
-            vueThis.t2017.push(location.lat, location.lng, 30);
-          } else {
-            vueThis.t2018.push(location.lat, location.lng, 30);
-          }
-
-        } else {
-          console.log('bummah. we reached the target server but it errored')
-        }
-      };
-      request.onerror = function() {
-        console.log('connection error! nooo')
-      };
-      request.send();
-    },
-    createIndex() {
-      this.speakerData.forEach((i) => {
-        this.tryGeo(i)
-      })
     },
   },
   computed: {
     speakerData() {
       return this.$store.state.speakerData;
-    }
+    },
+    yearsArr() {
+      let endUnit = {};
+      this.speakerData.forEach(function(index) {
+        let year = index.From.substr(index.From.length - 4),
+          lat = index.Latitude,
+          long = index.Longitude,
+          key = lat + ', ' + long,
+          magBase = 0.1;
+
+        if (lat === undefined || long === undefined) return;
+        if (year in endUnit) {
+
+          if (key in endUnit[year]) {
+            endUnit[year][key][2] += magBase
+          } else {
+            endUnit[year][key] = [lat, long, magBase]
+          }
+
+        } else {
+          let y = {};
+          y[key] = [lat, long, magBase];
+          endUnit[year] = y
+        }
+
+      })
+
+      let x = Object.entries(endUnit);
+      let area = [],
+        year,
+        places;
+      for (let i = 0; i < x.length; i++) {
+        [year, places] = x[i];
+        area.push([year, [].concat(...Object.values(places))])
+      }
+      return area;
+    },
   },
   mounted() {
-    // this.createIndex().then(
-    //   this.mapData.push('2017', [this.t2017], '2018', [this.t2018])
-    // )
-
-    // let myFirstPromise = new Promise((resolve, reject) => {
-    //   this.createIndex()
-    // }).then(
-    //   this.mapData.push('2017', this.t2017, '2018', this.t2018)
-    //   ).then(
-    //   console.log('yoyoyo')
-    //   )
     let earthmap = THREE.ImageUtils.loadTexture('/world.jpg');
     this.initGlobe(earthmap);
   }
@@ -638,5 +582,15 @@ a:hover {
 .year.active {
   font-size: 23px;
   color: #fff;
+}
+
+.debugging {
+  position: fixed;
+  color: red;
+  font-size: 20px;
+  top: 20px;
+  left: 20px;
+  background: black;
+  z-index: 3000;
 }
 </style>
