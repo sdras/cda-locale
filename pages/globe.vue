@@ -1,47 +1,47 @@
 <template>
   <section>
-    <p>
-      <nuxt-link to="/">Home</nuxt-link>
-    </p>
+    <h1>Cloud Developer Advocate Speaking</h1>
+    <h3>Node, JavaScript, Python</h3>
+    <new-table></new-table>
     <globe></globe>
   </section>
 </template>
 
 <script>
 import Globe from '~/components/Globe.vue'
+import NewTable from '~/components/NewTable.vue'
 
 export default {
   components: {
-    Globe
+    Globe,
+    NewTable,
   },
 }
 </script>
 
 <style>
 body {
-  background: #2B294D;
+  background: black;
   color: white;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  /* 1 */
-  display: block;
+  font-family: "Open Sans", "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
-  font-size: 100px;
-  color: white;
-  letter-spacing: 1px;
 }
 
-.subtitle {
+h1,
+h3 {
   font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
 }
 
-.links {
-  padding-top: 15px;
+h3 {
+  color: #5AB4FC;
+}
+
+section {
+  padding: 40px;
+}
+
+a,
+a:visited {
+  color: #5AB4FC;
 }
 </style>

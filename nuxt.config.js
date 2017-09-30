@@ -14,7 +14,13 @@ module.exports = {
           'Showing where all of the Node MS Cloud Developer Advocates will be speaking'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400'
+      }
+    ]
   },
   /*
   ** Customize the progress-bar color

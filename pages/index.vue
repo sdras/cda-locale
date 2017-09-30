@@ -25,8 +25,13 @@ export default {
 
 <style>
 body {
-  background: #2B294D;
+  background: black;
   color: white;
+}
+
+a {
+  color: white;
+  font-weight: bold;
 }
 
 .title {

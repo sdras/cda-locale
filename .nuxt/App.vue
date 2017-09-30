@@ -19,7 +19,7 @@ let layouts = {
 let resolvedLayouts = {}
 
 export default {
-  head: {"title":"cda-locale","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Showing where all of the Node MS Cloud Developer Advocates will be speaking"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[]},
+  head: {"title":"cda-locale","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Showing where all of the Node MS Cloud Developer Advocates will be speaking"}],"link":[{"rel":"stylesheet","href":"https://fonts.googleapis.com/css?family=Open+Sans:300,400"}],"style":[],"script":[]},
   data: () => ({
     layout: null,
     layoutName: ''

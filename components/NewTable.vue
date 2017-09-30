@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <table>
       <thead>
         <tr>
@@ -33,8 +33,25 @@ export default {
 </script>
 
 <style scoped>
+th {
+  background: #333333;
+  padding: 5px;
+}
+
+td {
+  padding: 4px 8px;
+}
+
+tr:nth-child(2n) {
+  background: #191919;
+}
+
 table {
-  width: 40vw;
-  margin: 50px;
+  width: 55vw;
+  height: 100vh;
+  margin: 50px 0 0 0;
+  position: relative;
+  z-index: 300;
+  /*background: #121212;*/
 }
 </style>

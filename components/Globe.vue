@@ -8,17 +8,12 @@
       <span id="year2000" class="year">2000</span>
     </div>
 
-    <div id="title">
-      World Population
-      <p>2017: {{ t2017 }} and 2018: {{ t2018 }}</p>
-      <!-- <span v-for="data in speakerData">{{ data.Location }}</span> -->
-    </div>
   </div>
 </template>
 
 <script>
 import * as THREE from 'three';
-import { TweenMax, Sine, TimelineLite } from "gsap";
+// import { TweenMax, Sine, TimelineLite } from "gsap";
 
 export default {
   data() {
@@ -41,7 +36,7 @@ export default {
 
         var colorFn = opts.colorFn || function(x) {
           var c = new THREE.Color();
-          c.setHSL((0.5 - (x / 0.8)), 1.0, 0.5);
+          c.setHSL((0.6 - (x * 0.35)), 1.0, 0.5);
           return c;
         };
         var imgDir = opts.imgDir || '~/assets/';
@@ -110,12 +105,9 @@ export default {
 
         function init() {
 
-          container.style.color = '#fff';
-          container.style.font = '13px/20px Arial, sans-serif';
-
           var shader, uniforms, material;
-          w = container.offsetWidth || window.innerWidth;
-          h = container.offsetHeight || window.innerHeight;
+          w = container.offsetWidth || window.innerWidth / 2;
+          h = container.offsetHeight || window.innerHeight / 1.5;
 
           camera = new THREE.PerspectiveCamera(30, w / h, 1, 10000);
           camera.position.z = distance;
@@ -127,14 +119,12 @@ export default {
           shader = Shaders['earth'];
           uniforms = THREE.UniformsUtils.clone(shader.uniforms);
 
-          uniforms['texture'].value = THREE.TextureLoader(imgDir + 'world.jpg');
+          uniforms['texture'].value = THREE.TextureLoader('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/world2.jpg');
 
           material = new THREE.ShaderMaterial({
-
             uniforms: uniforms,
             vertexShader: shader.vertexShader,
             fragmentShader: shader.fragmentShader
-
           });
 
           mesh = new THREE.Mesh(geometry, material);
@@ -145,14 +135,12 @@ export default {
           uniforms = THREE.UniformsUtils.clone(shader.uniforms);
 
           material = new THREE.ShaderMaterial({
-
             uniforms: uniforms,
             vertexShader: shader.vertexShader,
             fragmentShader: shader.fragmentShader,
             side: THREE.BackSide,
             blending: THREE.AdditiveBlending,
             transparent: true
-
           });
 
           mesh = new THREE.Mesh(geometry, material);
@@ -168,15 +156,10 @@ export default {
           renderer.setSize(w, h);
 
           renderer.domElement.style.position = 'absolute';
-
           container.appendChild(renderer.domElement);
-
           container.addEventListener('mousedown', onMouseDown, false);
-
           container.addEventListener('mousewheel', onMouseWheel, false);
-
           document.addEventListener('keydown', onDocumentKeyDown, false);
-
           window.addEventListener('resize', onWindowResize, false);
 
           container.addEventListener('mouseover', function() {
@@ -250,7 +233,7 @@ export default {
               }));
             } else {
               if (this._baseGeometry.morphTargets.length < 8) {
-                console.log('t l', this._baseGeometry.morphTargets.length);
+                // console.log('t l', this._baseGeometry.morphTargets.length);
                 var padding = 8 - this._baseGeometry.morphTargets.length;
                 for (var i = 0; i <= padding; i++) {
                   this._baseGeometry.morphTargets.push({ 'name': 'morphPadding' + i, vertices: this._baseGeometry.vertices });
@@ -434,16 +417,12 @@ export default {
       var container = document.getElementById('container');
       var globe = new DAT.Globe(container);
 
-      console.log(globe);
+      //console.log(globe);
       var i, tweens = [];
 
       var settime = function(globe, t) {
         return function() {
           globe.time = t / years.length
-          // TweenMax.to(globe, 0.5, {
-          //   time: t / years.length,
-          //   ease: Sine.easeInOut
-          // })
           //new TWEEN.Tween(globe).to({ time: t / years.length }, 500).easing(TWEEN.Easing.Cubic.EaseOut).start();
           var y = document.getElementById('year' + years[t]);
           if (y.getAttribute('class') === 'year active') {
@@ -465,6 +444,25 @@ export default {
       var xhr;
       //TWEEN.start();
 
+      // xhr = new XMLHttpRequest();
+      // xhr.open('GET', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/speaking.json', true);
+      // xhr.onreadystatechange = function(e) {
+      //   if (xhr.readyState === 4) {
+      //     if (xhr.status === 200) {
+      //       var data = JSON.parse(xhr.responseText);
+      //       window.data = data;
+      //       for (i = 0; i < data.length; i++) {
+      //         globe.addData(data[i][1], { format: 'magnitude', name: data[i][0], animated: true });
+      //       }
+      //       globe.createPoints();
+      //       settime(globe, 0)();
+      //       globe.animate();
+      //       document.body.style.backgroundImage = 'none'; // remove loading
+      //     }
+      //   }
+      // };
+      // xhr.send(null);
+
       xhr = new XMLHttpRequest();
       xhr.open('GET', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/population909500.json', true);
       xhr.onreadystatechange = function(e) {
@@ -484,17 +482,17 @@ export default {
       };
       xhr.send(null);
 
-      // where are we getting the data (this.computedvalue)
-      // var data = JSON.parse(xhr.responseText);
+
+      // let data = this.mapData;
       // window.data = data;
       // for (i = 0; i < data.length; i++) {
       //   globe.addData(data[i][1], { format: 'magnitude', name: data[i][0], animated: true });
       // }
-      // //create vertices
       // globe.createPoints();
       // settime(globe, 0)();
       // globe.animate();
       // document.body.style.backgroundImage = 'none'; // remove loading
+
     },
     tryGeo(dataI) {
       let request = new XMLHttpRequest(),
@@ -536,30 +534,19 @@ export default {
       return this.$store.state.speakerData;
     }
   },
-  watch: {
-    mapData() {
-      console.log(this.mapData)
-    }
-  },
   mounted() {
-    this.initGlobe();
     // this.createIndex().then(
     //   this.mapData.push('2017', [this.t2017], '2018', [this.t2018])
     // )
 
-    let myFirstPromise = new Promise((resolve, reject) => {
-      this.createIndex()
-    }).then(
-      this.mapData.push('2017', this.t2017, '2018', this.t2018)
-      ).then(
-      console.log('yoyoyo')
-      )
-
-    // myFirstPromise.then((successMessage) => {
-    //   // successMessage is whatever we passed in the resolve(...) function above.
-    //   // It doesn't have to be a string, but if it is only a succeed message, it probably will be.
-    //   console.log("Yay! " + successMessage);
-    // });
+    // let myFirstPromise = new Promise((resolve, reject) => {
+    //   this.createIndex()
+    // }).then(
+    //   this.mapData.push('2017', this.t2017, '2018', this.t2018)
+    //   ).then(
+    //   console.log('yoyoyo')
+    //   )
+    this.initGlobe();
   }
 }
 </script>
@@ -579,6 +566,14 @@ body {
   height: 100%;
 }
 
+#container {
+  width: 60%;
+  height: 70%;
+  position: fixed;
+  right: -100px;
+  top: 20%;
+}
+
 #info {
   font-size: 11px;
   position: absolute;
@@ -592,7 +587,7 @@ body {
 #currentInfo {
   width: 270px;
   position: absolute;
-  left: 20px;
+  left: 500px;
   top: 63px;
   background-color: rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.4);
@@ -620,12 +615,12 @@ a:hover {
   left: 20px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  font: 20px Georgia;
+  font-size: 20px;
   padding: 10px;
 }
 
 .year {
-  font: 16px Georgia;
+  font-size: 16px;
   line-height: 26px;
   height: 30px;
   text-align: center;
