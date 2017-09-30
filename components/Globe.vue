@@ -27,7 +27,7 @@ export default {
     }
   },
   methods: {
-    initGlobe() {
+    initGlobe(imageLoad) {
 
       var DAT = DAT || {};
 
@@ -119,7 +119,9 @@ export default {
           shader = Shaders['earth'];
           uniforms = THREE.UniformsUtils.clone(shader.uniforms);
 
-          uniforms['texture'].value = THREE.TextureLoader('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/world2.jpg');
+          //uniforms['texture'].value = THREE.TextureLoader('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/world2.jpg');
+          uniforms['texture'].value = imageLoad;
+          console.log(uniforms['texture'].value);
 
           material = new THREE.ShaderMaterial({
             uniforms: uniforms,
@@ -546,7 +548,8 @@ export default {
     //   ).then(
     //   console.log('yoyoyo')
     //   )
-    this.initGlobe();
+    let earthmap = THREE.ImageUtils.loadTexture('/world.jpg');
+    this.initGlobe(earthmap);
   }
 }
 </script>
