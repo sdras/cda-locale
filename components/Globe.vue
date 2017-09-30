@@ -498,7 +498,7 @@ export default {
       let request = new XMLHttpRequest(),
         vueThis = this,
         city = dataI.Location,
-        year = dataI.FromDate.substr(dataI.FromDate.length - 4),
+        year = dataI.From.substr(dataI.From.length - 4),
         location;
 
       request.open('GET', 'https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(city), true);
@@ -588,7 +588,7 @@ body {
   width: 270px;
   position: absolute;
   left: 500px;
-  top: 63px;
+  top: 50px;
   background-color: rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   padding: 10px;

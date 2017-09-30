@@ -2,416 +2,416 @@
   {
     "Name": "Asim Hussain",
     "Conference": "Lviv JS",
-    "FromDate": "Aug 26, 2017",
-    "ToDate": "Aug 26, 2017",
+    "From": "Aug 26, 2017",
+    "To": "Aug 26, 2017",
     "Location": "Lviv, Ukraine",
     "Link": ""
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Frontend Conference",
-    "FromDate": "Aug 31, 2017",
-    "ToDate": "Sep 1, 2017",
+    "From": "Aug 31, 2017",
+    "To": "Sep 1, 2017",
     "Location": "Zurich",
     "Link": "https://www.frontendconf.ch/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Frontend Conference Workshops",
-    "FromDate": "Sep 2, 2017",
-    "ToDate": "Sep 2, 2017",
+    "From": "Sep 2, 2017",
+    "To": "Sep 2, 2017",
     "Location": "Zurich",
     "Link": "https://www.frontendconf.ch/workshops"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Web Animation Workshops",
-    "FromDate": "Sep 4, 2017",
-    "ToDate": "Sep 5, 2017",
+    "From": "Sep 4, 2017",
+    "To": "Sep 5, 2017",
     "Location": "Paris",
     "Link": "https://webanimationworkshops.com/"
   },
   {
     "Name": "Simona Cotin",
     "Conference": "DLD Tel Aviv",
-    "FromDate": "Sep 6, 2017",
-    "ToDate": "Sep 8, 2017",
+    "From": "Sep 6, 2017",
+    "To": "Sep 8, 2017",
     "Location": "Tel Aviv",
     "Link": "https://dldtelaviv.com/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Fullstack Fest",
-    "FromDate": "Sep 7, 2017",
-    "ToDate": "Sep 8, 2017",
+    "From": "Sep 7, 2017",
+    "To": "Sep 8, 2017",
     "Location": "Barcelona, Spain",
     "Link": "https://2017.fullstackfest.com/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Web Animation Workshops",
-    "FromDate": "Sep 18, 2017",
-    "ToDate": "Sep 19, 2017",
+    "From": "Sep 18, 2017",
+    "To": "Sep 19, 2017",
     "Location": "Portland",
     "Link": "https://webanimationworkshops.com/"
   },
   {
     "Name": "John Papa",
     "Conference": "Pluralsight Live",
-    "FromDate": "Sep 19, 2017",
-    "ToDate": "Sep 21, 2017",
+    "From": "Sep 19, 2017",
+    "To": "Sep 21, 2017",
     "Location": "Salt Lake City",
     "Link": "https://www.pluralsight.com/event-details/2017/live-2017"
   },
   {
     "Name": "Simona Cotin",
     "Conference": "PortoTechHub",
-    "FromDate": "Sep 20, 2017",
-    "ToDate": "Sep 20, 2017",
+    "From": "Sep 20, 2017",
+    "To": "Sep 20, 2017",
     "Location": "Porto, Portugal",
     "Link": "https://portotechhub.com/conference/"
   },
   {
     "Name": "Burke Holland",
     "Conference": "ConnectJS",
-    "FromDate": "Sep 20, 2017",
-    "ToDate": "Sep 22, 2017",
+    "From": "Sep 20, 2017",
+    "To": "Sep 22, 2017",
     "Location": "Atlanta",
     "Link": ""
   },
   {
     "Name": "Asim Hussain",
     "Conference": "FrontEnd Con",
-    "FromDate": "Sep 21, 2017",
-    "ToDate": "Sep 22, 2017",
+    "From": "Sep 21, 2017",
+    "To": "Sep 22, 2017",
     "Location": "Warsaw, Poland",
     "Link": ""
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "D3 Unconf - Keynote",
-    "FromDate": "Sep 21, 2017",
-    "ToDate": "Sep 22, 2017",
+    "From": "Sep 21, 2017",
+    "To": "Sep 22, 2017",
     "Location": "San Francisco",
     "Link": "http://visfest.com/d3unconf-2017/"
   },
   {
     "Name": "Simona Cotin",
     "Conference": "Frontend Connect",
-    "FromDate": "Sep 22, 2017",
-    "ToDate": "Sep 23, 2017",
+    "From": "Sep 22, 2017",
+    "To": "Sep 23, 2017",
     "Location": "Warsaw, Poland",
     "Link": "http://frontend-con.io/ "
   },
   {
     "Name": "John Papa",
     "Conference": "Ignite",
-    "FromDate": "Sep 24, 2017",
-    "ToDate": "Sep 24, 2017",
+    "From": "Sep 24, 2017",
+    "To": "Sep 24, 2017",
     "Location": "Orlando",
     "Link": "https://www.microsoft.com/en-us/ignite/"
   },
   {
     "Name": "Brian Clark",
     "Conference": "Ignite",
-    "FromDate": "Sep 24, 2017",
-    "ToDate": "Sep 29, 2017",
+    "From": "Sep 24, 2017",
+    "To": "Sep 29, 2017",
     "Location": "Orlando",
     "Link": "https://www.microsoft.com/en-us/ignite/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "The Web Unleashed Workshop",
-    "FromDate": "Sep 24, 2017",
-    "ToDate": "Sep 24, 2017",
+    "From": "Sep 24, 2017",
+    "To": "Sep 24, 2017",
     "Location": "Toronto, Canada",
     "Link": "http://fitc.ca/event/webu17/workshops/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "The Web Unleashed",
-    "FromDate": "Sep 25, 2017",
-    "ToDate": "Sep 26, 2017",
+    "From": "Sep 25, 2017",
+    "To": "Sep 26, 2017",
     "Location": "Toronto, Canada",
     "Link": "http://fitc.ca/event/webu17/"
   },
   {
     "Name": "Burke Holland",
     "Conference": "The Web Unleashed",
-    "FromDate": "Sep 25, 2017",
-    "ToDate": "Sep 26, 2017",
+    "From": "Sep 25, 2017",
+    "To": "Sep 26, 2017",
     "Location": "Toronto, Canada",
     "Link": ""
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "edUI Conf",
-    "FromDate": "Sep 27, 2017",
-    "ToDate": "Sep 27, 2017",
+    "From": "Sep 27, 2017",
+    "To": "Sep 27, 2017",
     "Location": "Virginia",
     "Link": "http://eduiconf.org/"
   },
   {
     "Name": "Brian Clark",
     "Conference": "Node.js Interactive",
-    "FromDate": "Oct 4, 2017",
-    "ToDate": "Oct 6, 2017",
+    "From": "Oct 4, 2017",
+    "To": "Oct 6, 2017",
     "Location": "Vancouver",
     "Link": "http://events.linuxfoundation.org/events/node-interactive"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "CSS Dev Conf- featured speaker",
-    "FromDate": "Oct 9, 2017",
-    "ToDate": "Oct 10, 2017",
+    "From": "Oct 9, 2017",
+    "To": "Oct 10, 2017",
     "Location": "New Orleans",
     "Link": "http://2017.cssdevconf.com/"
   },
   {
     "Name": "John Papa",
     "Conference": "AngularMix",
-    "FromDate": "Oct 10, 2017",
-    "ToDate": "Oct 12, 2017",
+    "From": "Oct 10, 2017",
+    "To": "Oct 12, 2017",
     "Location": "Orlando",
     "Link": "https://angularmix.com"
   },
   {
     "Name": "Brian Clark",
     "Conference": "AngularMix",
-    "FromDate": "Oct 10, 2017",
-    "ToDate": "Oct 12, 2017",
+    "From": "Oct 10, 2017",
+    "To": "Oct 12, 2017",
     "Location": "Orlando",
     "Link": "https://angularmix.com"
   },
   {
     "Name": "Simona Cotin",
     "Conference": "AngularMix",
-    "FromDate": "Oct 10, 2017",
-    "ToDate": "Oct 12, 2017",
+    "From": "Oct 10, 2017",
+    "To": "Oct 12, 2017",
     "Location": "Orlando",
     "Link": "https://angularmix.com/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "CSS Dev Conf Workshops",
-    "FromDate": "Oct 11, 2017",
-    "ToDate": "Oct 11, 2017",
+    "From": "Oct 11, 2017",
+    "To": "Oct 11, 2017",
     "Location": "New Orleans",
     "Link": "http://2017.cssdevconf.com/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Web Animation Workshops",
-    "FromDate": "Oct 13, 2017",
-    "ToDate": "Oct 13, 2017",
+    "From": "Oct 13, 2017",
+    "To": "Oct 13, 2017",
     "Location": "Pittsburgh",
     "Link": "https://webanimationworkshops.com/"
   },
   {
     "Name": "Burke Holland",
     "Conference": "DevUp",
-    "FromDate": "Oct 14, 2017",
-    "ToDate": "Oct 16, 2017",
+    "From": "Oct 14, 2017",
+    "To": "Oct 16, 2017",
     "Location": "St. Louis",
     "Link": "http://devupconf.org/"
   },
   {
     "Name": "John Papa",
     "Conference": "DevUp",
-    "FromDate": "Oct 16, 2017",
-    "ToDate": "Oct 16, 2017",
+    "From": "Oct 16, 2017",
+    "To": "Oct 16, 2017",
     "Location": "St. Louis",
     "Link": "http://devupconf.org/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Smashing Conf",
-    "FromDate": "Oct 17, 2017",
-    "ToDate": "Oct 18, 2017",
+    "From": "Oct 17, 2017",
+    "To": "Oct 18, 2017",
     "Location": "Barcelona, Spain",
     "Link": "https://smashingconf.com/barcelona-2017/"
   },
   {
     "Name": "Simona Cotin",
     "Conference": "Plone",
-    "FromDate": "Oct 18, 2017",
-    "ToDate": "Oct 20, 2017",
+    "From": "Oct 18, 2017",
+    "To": "Oct 20, 2017",
     "Location": "Barcelona, Spain",
     "Link": "https://2017.ploneconf.org/ "
   },
   {
     "Name": "Asim Hussain",
     "Conference": "DefFest Nantes",
-    "FromDate": "Oct 19, 2017",
-    "ToDate": "Oct 20, 2017",
+    "From": "Oct 19, 2017",
+    "To": "Oct 20, 2017",
     "Location": "Nantes, France",
     "Link": ""
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Smashing Conf Workshops",
-    "FromDate": "Oct 19, 2017",
-    "ToDate": "Oct 19, 2017",
+    "From": "Oct 19, 2017",
+    "To": "Oct 19, 2017",
     "Location": "Barcelona, Spain",
     "Link": "https://smashingconf.com/barcelona-2017/workshops"
   },
   {
     "Name": "Simona Cotin",
     "Conference": "Gdg Nantes",
-    "FromDate": "Oct 19, 2017",
-    "ToDate": "Oct 20, 2017",
+    "From": "Oct 19, 2017",
+    "To": "Oct 20, 2017",
     "Location": "Nantes, France",
     "Link": "https://devfest.gdgnantes.com"
   },
   {
     "Name": "Burke Holland",
     "Conference": "Certified Fresh",
-    "FromDate": "Oct 20, 2017",
-    "ToDate": "Oct 20, 2017",
+    "From": "Oct 20, 2017",
+    "To": "Oct 20, 2017",
     "Location": "Online",
     "Link": ""
   },
   {
     "Name": "John Papa",
     "Conference": "All Things Open",
-    "FromDate": "Oct 23, 2017",
-    "ToDate": "Oct 24, 2017",
+    "From": "Oct 23, 2017",
+    "To": "Oct 24, 2017",
     "Location": "Raleigh",
     "Link": "https://allthingsopen.org/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Reactive Conf",
-    "FromDate": "Oct 26, 2017",
-    "ToDate": "Oct 28, 2017",
+    "From": "Oct 26, 2017",
+    "To": "Oct 28, 2017",
     "Location": "Bratislava",
     "Link": "https://reactiveconf.com/"
   },
   {
     "Name": "John Papa",
     "Conference": "AngleBrackets",
-    "FromDate": "Oct 29, 2017",
-    "ToDate": "Oct 31, 2017",
+    "From": "Oct 29, 2017",
+    "To": "Oct 31, 2017",
     "Location": "Las Vegas",
     "Link": "https://anglebrackets.org"
   },
   {
     "Name": "Brian Clark",
     "Conference": "AngleBrackets",
-    "FromDate": "Oct 29, 2017",
-    "ToDate": "Oct 31, 2017",
+    "From": "Oct 29, 2017",
+    "To": "Oct 31, 2017",
     "Location": "Las Vegas",
     "Link": "https://anglebrackets.org"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "You Gotta Love Frontend",
-    "FromDate": "Oct 30, 2017",
-    "ToDate": "Oct 31, 2017",
+    "From": "Oct 30, 2017",
+    "To": "Oct 31, 2017",
     "Location": "Tel Aviv",
     "Link": "https://yougottalovefrontend.com/"
   },
   {
     "Name": "Burke Holland",
     "Conference": "Dev Intersection",
-    "FromDate": "Oct 31, 2017",
-    "ToDate": "Nov 2, 2017",
+    "From": "Oct 31, 2017",
+    "To": "Nov 2, 2017",
     "Location": "Las Vegas",
     "Link": ""
   },
   {
     "Name": "Simona Cotin",
     "Conference": "Nodeconf",
-    "FromDate": "Nov 5, 2017",
-    "ToDate": "Nov 8, 2017",
+    "From": "Nov 5, 2017",
+    "To": "Nov 8, 2017",
     "Location": "Kilkenny, Ireland",
     "Link": "http://www.nodeconf.eu/"
   },
   {
     "Name": "Asim Hussain",
     "Conference": "Angular Connect",
-    "FromDate": "Nov 7, 2017",
-    "ToDate": "Nov 8, 2017",
+    "From": "Nov 7, 2017",
+    "To": "Nov 8, 2017",
     "Location": "London, UK",
     "Link": ""
   },
   {
     "Name": "Simona Cotin",
     "Conference": "Angular Connect",
-    "FromDate": "Nov 7, 2017",
-    "ToDate": "Nov 8, 2017",
+    "From": "Nov 7, 2017",
+    "To": "Nov 8, 2017",
     "Location": "London, UK",
     "Link": "http://angularconnect.com/  "
   },
   {
     "Name": "Burke Holland",
     "Conference": "DevReach",
-    "FromDate": "Nov 13, 2017",
-    "ToDate": "Nov 14, 2017",
+    "From": "Nov 13, 2017",
+    "To": "Nov 14, 2017",
     "Location": "Sofia Bulgaria",
     "Link": ""
   },
   {
     "Name": "John Papa",
     "Conference": "360 Live",
-    "FromDate": "Nov 17, 2017",
-    "ToDate": "Nov 17, 2017",
+    "From": "Nov 17, 2017",
+    "To": "Nov 17, 2017",
     "Location": "Orlando",
     "Link": "https://live360events.com/events/orlando-2017/home.aspx"
   },
   {
     "Name": "Brian Clark",
     "Conference": "Nodev",
-    "FromDate": "Nov 27, 2017",
-    "ToDate": "Nov 28, 2017",
+    "From": "Nov 27, 2017",
+    "To": "Nov 28, 2017",
     "Location": "Nashville",
     "Link": "https://nodev.org"
   },
   {
     "Name": "John Papa",
     "Conference": "ngAtl",
-    "FromDate": "Jan 30, 2018",
-    "ToDate": "Feb 2, 2018",
+    "From": "Jan 30, 2018",
+    "To": "Feb 2, 2018",
     "Location": "Atlanta",
     "Link": "http://ng-atl.org/"
   },
   {
     "Name": "Brian Clark",
     "Conference": "ngAtl",
-    "FromDate": "Jan 30, 2018",
-    "ToDate": "Feb 2, 2018",
+    "From": "Jan 30, 2018",
+    "To": "Feb 2, 2018",
     "Location": "Atlanta",
     "Link": "https://ng-atl.org"
   },
   {
     "Name": "Simona Cotin",
     "Conference": "ngAtl",
-    "FromDate": "Jan 30, 2018",
-    "ToDate": "Feb 2, 2018",
+    "From": "Jan 30, 2018",
+    "To": "Feb 2, 2018",
     "Location": "Atlanta",
     "Link": "http://ng-atl.org/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Vue Conf Amsterdam",
-    "FromDate": "Feb 14, 2018",
-    "ToDate": "Feb 15, 2018",
+    "From": "Feb 14, 2018",
+    "To": "Feb 15, 2018",
     "Location": "Amsterdam",
     "Link": "site underway"
   },
   {
     "Name": "John Papa",
     "Conference": "ngConf",
-    "FromDate": "Apr 18, 2018",
-    "ToDate": "Apr 20, 2018",
+    "From": "Apr 18, 2018",
+    "To": "Apr 20, 2018",
     "Location": "Salt Lake City",
     "Link": "https://www.ng-conf.org/"
   },
   {
     "Name": "Sarah Drasner",
     "Conference": "Fullstack 2018 - Keynote",
-    "FromDate": "Jul 11 2018",
-    "ToDate": "Jul 13 2018",
+    "From": "Jul 11 2018",
+    "To": "Jul 13 2018",
     "Location": "London, UK",
     "Link":
       "https://skillsmatter.com/conferences/9815-fullstack-2018-the-conference-on-javascript-node-and-internet-of-things"
@@ -419,8 +419,8 @@
   {
     "Name": "Sarah Drasner",
     "Conference": "JS Heroes",
-    "FromDate": "Apr 18 2017",
-    "ToDate": "Apr 21 2017",
+    "From": "Apr 18 2017",
+    "To": "Apr 21 2017",
     "Location": "Romania",
     "Link": "https://jsheroes.io/"
   }

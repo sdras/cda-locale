@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <table>
+    <table class="scroll">
       <thead>
         <tr>
           <th v-for="key in columns">
@@ -39,11 +39,15 @@ th {
 }
 
 td {
-  padding: 4px 8px;
+  padding: 5px 8px;
 }
 
 tr:nth-child(2n) {
-  background: #191919;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.scroll td:nth-of-type(2) {
+  width: 100px;
 }
 
 table {
@@ -52,6 +56,40 @@ table {
   margin: 50px 0 0 0;
   position: relative;
   z-index: 300;
-  /*background: #121212;*/
+}
+
+.scroll {
+  border: 0;
+  border-collapse: collapse;
+}
+
+.scroll tr {
+  display: flex;
+}
+
+.scroll td {
+  padding: 3px;
+  flex: 1 auto;
+  width: 1px;
+  word-wrap: break;
+}
+
+.scroll thead tr:after {
+  content: '';
+  overflow-y: scroll;
+  visibility: hidden;
+  height: 0;
+}
+
+.scroll thead th {
+  flex: 1 auto;
+  display: block;
+}
+
+.scroll tbody {
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+  height: 90vh;
 }
 </style>
