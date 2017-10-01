@@ -21,7 +21,9 @@
       <tbody>
         <tr v-for="(post, i) in filteredData">
           <td v-for="entry in columns">
-            {{ post[entry] }}
+            <a :href="post.Link" target="_blank">
+              {{ post[entry] }}
+            </a>
           </td>
         </tr>
       </tbody>
@@ -95,6 +97,10 @@ input[type="text"] {
   padding: 2px 0;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
 
 input[type="text"] {
   background: #121212;
