@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-"@google/maps@^0.4.3":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@google/maps/-/maps-0.4.3.tgz#b468961114d6e0749c15802e0da149dcea2283a5"
-
 "@nuxtjs/youch@3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/youch/-/youch-3.0.2.tgz#03fff829ca45bd1c3ece84c08270f9686229dd4a"
@@ -5312,6 +5308,10 @@ tunnel-agent@^0.6.0:
 tween.js@^16.6.0:
   version "16.6.0"
   resolved "https://registry.yarnpkg.com/tween.js/-/tween.js-16.6.0.tgz#739104c9336cc4f11ee53f9ce7cede51e6723624"
+
+tween@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/tween/-/tween-0.9.0.tgz#f856c7a9c9ab85ca9a2bc02282591aa2513a20ed"
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"

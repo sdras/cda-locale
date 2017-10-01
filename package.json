@@ -1,7 +1,8 @@
 {
   "name": "cda-locale",
   "version": "1.0.0",
-  "description": "Showing where all of the Node MS Cloud Developer Advocates will be speaking",
+  "description":
+    "Showing where all of the Node MS Cloud Developer Advocates will be speaking",
   "author": "sdras <sarah.drasner@gmail.com>",
   "private": true,
   "scripts": {
@@ -13,13 +14,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@google/maps": "^0.4.3",
     "autoprefixer": "^7.1.4",
     "babel-preset-env": "^1.6.0",
     "nuxt": "^1.0.0-rc8",
     "pug": "^2.0.0-rc.4",
     "three": "^0.87.1",
-    "tween.js": "^16.6.0",
     "vue-resource": "^1.3.4",
     "vuex": "^2.4.0"
   },

@@ -2,11 +2,8 @@
   <div>
     <div id="container"></div>
 
-    <div>
-      <span v-for="year in yearsFlat" key="year" class="year" id="year">{{year}}</span>
-      <span id="year1990" class="year">1990</span>
-      <span id="year1995" class="year">1995</span>
-      <span id="year2000" class="year">2000</span>
+    <div class="yeartoggle">
+      <span v-for="year in yearsFlat" key="year" class="year" :id="year">{{year}}</span>
     </div>
 
   </div>
@@ -14,25 +11,23 @@
 
 <script>
 import * as THREE from 'three';
-// import { TweenMax, Sine, TimelineLite } from "gsap";
 
 export default {
   methods: {
     initGlobe(imageLoad) {
 
-      var DAT = DAT || {};
+      const DAT = DAT || {};
 
       DAT.Globe = function(container, opts) {
         opts = opts || {};
 
-        var colorFn = opts.colorFn || function(x) {
-          var c = new THREE.Color();
+        const colorFn = opts.colorFn || function(x) {
+          let c = new THREE.Color();
           c.setHSL((0.6 - (x * 0.35)), 1.0, 0.5);
           return c;
         };
-        var imgDir = opts.imgDir || '~/assets/';
 
-        var Shaders = {
+        const Shaders = {
           'earth': {
             uniforms: {
               'texture': { type: 't', value: null }
@@ -77,22 +72,19 @@ export default {
           }
         };
 
-        var camera, scene, renderer, w, h;
-        var mesh, atmosphere, point;
+        let camera, scene, renderer, w, h, mesh, atmosphere, point, overRenderer;
 
-        var overRenderer;
-
-        var curZoomSpeed = 0;
-        var zoomSpeed = 50;
-
-        var mouse = { x: 0, y: 0 }, mouseOnDown = { x: 0, y: 0 };
-        var rotation = { x: 0, y: 0 },
+        let curZoomSpeed = 0,
+          zoomSpeed = 50,
+          mouse = { x: 0, y: 0 },
+          mouseOnDown = { x: 0, y: 0 },
+          rotation = { x: 0, y: 0 },
           target = { x: Math.PI * 3 / 2, y: Math.PI / 6.0 },
-          targetOnDown = { x: 0, y: 0 };
-
-        var distance = 100000, distanceTarget = 100000;
-        var padding = 40;
-        var PI_HALF = Math.PI / 2;
+          targetOnDown = { x: 0, y: 0 },
+          distance = 100000,
+          distanceTarget = 100000,
+          padding = 40,
+          PI_HALF = Math.PI / 2;
 
         function init() {
 
@@ -109,10 +101,7 @@ export default {
 
           shader = Shaders['earth'];
           uniforms = THREE.UniformsUtils.clone(shader.uniforms);
-
-          //uniforms['texture'].value = THREE.TextureLoader('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/world2.jpg');
           uniforms['texture'].value = imageLoad;
-          console.log(uniforms['texture'].value);
 
           material = new THREE.ShaderMaterial({
             uniforms: uniforms,
@@ -186,7 +175,6 @@ export default {
               for (i = 0; i < data.length; i += step) {
                 lat = data[i];
                 lng = data[i + 1];
-                //        size = data[i + 2];
                 color = colorFnWrapper(data, i);
                 size = 0;
                 addPoint(lat, lng, size, color, this._baseGeometry);
@@ -226,7 +214,6 @@ export default {
               }));
             } else {
               if (this._baseGeometry.morphTargets.length < 8) {
-                // console.log('t l', this._baseGeometry.morphTargets.length);
                 var padding = 8 - this._baseGeometry.morphTargets.length;
                 for (var i = 0; i <= padding; i++) {
                   this._baseGeometry.morphTargets.push({ 'name': 'morphPadding' + i, vertices: this._baseGeometry.vertices });
@@ -244,8 +231,8 @@ export default {
 
         function addPoint(lat, lng, size, color, subgeo) {
 
-          var phi = (90 - lat) * Math.PI / 180;
-          var theta = (180 - lng) * Math.PI / 180;
+          let phi = (90 - lat) * Math.PI / 180;
+          let theta = (180 - lng) * Math.PI / 180;
 
           point.position.x = 200 * Math.sin(phi) * Math.cos(theta);
           point.position.y = 200 * Math.cos(phi);
@@ -256,10 +243,8 @@ export default {
           point.scale.z = Math.max(size, 0.1); // avoid non-invertible matrix
           point.updateMatrix();
 
-          for (var i = 0; i < point.geometry.faces.length; i++) {
-
+          for (let i = 0; i < point.geometry.faces.length; i++) {
             point.geometry.faces[i].color = color;
-
           }
           if (point.matrixAutoUpdate) {
             point.updateMatrix();
@@ -359,13 +344,11 @@ export default {
           camera.position.z = distance * Math.cos(rotation.x) * Math.cos(rotation.y);
 
           camera.lookAt(mesh.position);
-
           renderer.render(scene, camera);
         }
 
         init();
         this.animate = animate;
-
 
         this.__defineGetter__('time', function() {
           return this._time || 0;
@@ -406,39 +389,35 @@ export default {
 
       // this particular implementation
 
-      var years = ['1990', '1995', '2000'];
-      var container = document.getElementById('container');
-      //let years = this.yearsFlat;
-      var globe = new DAT.Globe(container);
+      const container = document.getElementById('container'),
+        years = this.yearsFlat,
+        globe = new DAT.Globe(container);
 
-      console.log(years);
+      let i, tweens = [];
 
-      var i, tweens = [];
-
-      var settime = function(globe, t) {
+      const settime = function(globe, t) {
         return function() {
-          globe.time = t / years.length
-          //new TWEEN.Tween(globe).to({ time: t / years.length }, 500).easing(TWEEN.Easing.Cubic.EaseOut).start();
-          var y = document.getElementById('year' + years[t]);
+          globe.time = t / years.length;
+          let y = document.getElementById(years[t]);
           if (y.getAttribute('class') === 'year active') {
             return;
           }
-          var yy = document.getElementsByClassName('year');
-          for (i = 0; i < yy.length; i++) {
+          let yy = document.getElementsByClassName('year');
+          for (let i = 0; i < yy.length; i++) {
             yy[i].setAttribute('class', 'year');
           }
           y.setAttribute('class', 'year active');
         };
       };
 
-      for (var i = 0; i < years.length; i++) {
-        var y = document.getElementById('year' + years[i]);
+      for (let i = 0; i < years.length; i++) {
+        let y = document.getElementById(years[i]);
         y.addEventListener('mouseover', settime(globe, i), false);
       }
 
       let data = this.yearsArr;
       window.data = data;
-      for (i = 0; i < data.length; i++) {
+      for (let i = 0; i < data.length; i++) {
         globe.addData(data[i][1], { format: 'magnitude', name: data[i][0], animated: true });
       }
       globe.createPoints();
@@ -495,7 +474,7 @@ export default {
     }
   },
   mounted() {
-    let earthmap = THREE.ImageUtils.loadTexture('/world.jpg');
+    let earthmap = THREE.ImageUtils.loadTexture('/world4.jpg');
     this.initGlobe(earthmap);
   }
 }
@@ -587,13 +566,9 @@ a:hover {
   color: #fff;
 }
 
-.debugging {
+.yeartoggle {
   position: fixed;
-  color: red;
-  font-size: 20px;
-  top: 20px;
-  left: 20px;
-  background: black;
-  z-index: 3000;
+  top: 50px;
+  right: 60px;
 }
 </style>

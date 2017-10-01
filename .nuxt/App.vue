@@ -19,16 +19,15 @@ let layouts = {
 let resolvedLayouts = {}
 
 export default {
-  head: { "title": "cda-locale", "meta": [{ "charset": "utf-8" }, { "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "hid": "description", "name": "description", "content": "Showing where all of the Node MS Cloud Developer Advocates will be speaking" }], "link": [{ "rel": "stylesheet", "href": "https://fonts.googleapis.com/css?family=Open+Sans:300,400" }], "style": [], "script": [] },
+  head: {"title":"cda-locale","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Showing where all of the Node MS Cloud Developer Advocates will be speaking"}],"link":[{"rel":"stylesheet","href":"https://fonts.googleapis.com/css?family=Open+Sans:300,400"}],"style":[],"script":[]},
   data: () => ({
     layout: null,
-    layoutName: '',
-    dataStore: ''
+    layoutName: ''
   }),
-  beforeCreate() {
+  beforeCreate () {
     Vue.util.defineReactive(this, 'nuxt', this.$options._nuxt)
   },
-  created() {
+  created () {
     // Add this.$nuxt in child instances
     Vue.prototype.$nuxt = this
     // add to window so we can listen when ready
@@ -38,56 +37,47 @@ export default {
     // Add $nuxt.error()
     this.error = this.nuxt.error
   },
-
-  mounted() {
+  
+  mounted () {
     this.$loading = this.$refs.loading
-
-    // // GET /someUrl
-    // this.$http.get('https://rawgit.com/sdras/cda-data/master/cda-data.json').then(response => {
-    //   console.log('success!')
-    //   console.log(response)
-    //   this.dataStore = response;
-    // }, response => {
-    //   console.log('fails :(')
-    // });
   },
   watch: {
     'nuxt.err': 'errorChanged'
   },
-
+  
   methods: {
-
-    errorChanged() {
+    
+    errorChanged () {
       if (this.nuxt.err && this.$loading) {
         if (this.$loading.fail) this.$loading.fail()
         if (this.$loading.finish) this.$loading.finish()
       }
     },
-
-    setLayout(layout) {
+    
+    setLayout (layout) {
       if (!layout || !resolvedLayouts['_' + layout]) layout = 'default'
       this.layoutName = layout
       let _layout = '_' + layout
       this.layout = resolvedLayouts[_layout]
       return this.layout
     },
-    loadLayout(layout) {
+    loadLayout (layout) {
       if (!layout || !(layouts['_' + layout] || resolvedLayouts['_' + layout])) layout = 'default'
       let _layout = '_' + layout
       if (resolvedLayouts[_layout]) {
         return Promise.resolve(resolvedLayouts[_layout])
       }
       return layouts[_layout]()
-        .then((Component) => {
-          resolvedLayouts[_layout] = Component
-          delete layouts[_layout]
-          return resolvedLayouts[_layout]
-        })
-        .catch((e) => {
-          if (this.$nuxt) {
-            return this.$nuxt.error({ statusCode: 500, message: e.message })
-          }
-        })
+      .then((Component) => {
+        resolvedLayouts[_layout] = Component
+        delete layouts[_layout]
+        return resolvedLayouts[_layout]
+      })
+      .catch((e) => {
+        if (this.$nuxt) {
+          return this.$nuxt.error({ statusCode: 500, message: e.message })
+        }
+      })
     }
   },
   components: {
