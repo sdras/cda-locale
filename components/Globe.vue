@@ -1,9 +1,9 @@
 <template>
   <div>
     <div id="container"></div>
-    <!-- <p class="debugging">{{yearsArr}}</p> -->
 
-    <div id="currentInfo">
+    <div>
+      <span v-for="year in yearsFlat" key="year" class="year" id="year">{{year}}</span>
       <span id="year1990" class="year">1990</span>
       <span id="year1995" class="year">1995</span>
       <span id="year2000" class="year">2000</span>
@@ -17,11 +17,6 @@ import * as THREE from 'three';
 // import { TweenMax, Sine, TimelineLite } from "gsap";
 
 export default {
-  data() {
-    return {
-      years: ['1990', '1995', '2000'],
-    }
-  },
   methods: {
     initGlobe(imageLoad) {
 
@@ -413,7 +408,10 @@ export default {
 
       var years = ['1990', '1995', '2000'];
       var container = document.getElementById('container');
+      //let years = this.yearsFlat;
       var globe = new DAT.Globe(container);
+
+      console.log(years);
 
       var i, tweens = [];
 
@@ -490,6 +488,11 @@ export default {
       }
       return area;
     },
+    yearsFlat() {
+      let x = [].concat.apply([], this.yearsArr);
+      x = x.filter((_, i) => (i + 1) % 2);
+      return x;
+    }
   },
   mounted() {
     let earthmap = THREE.ImageUtils.loadTexture('/world.jpg');

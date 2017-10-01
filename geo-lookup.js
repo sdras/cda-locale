@@ -29,7 +29,7 @@ module.exports = function(context, data) {
       // Retrieve the geo information for each item in the original data
       getGeo(makeIterator(content), (updatedContent, err) => {
         if (!err) {
-          // Everything went well; go ahead and push back up to Github. Note that
+          // Everything went well- go ahead and push back up to Github. Note that
           // we need to base64 encode the JSON to embed it into the PUT (dear god, why)
           let updatedContentB64 = new Buffer(
             JSON.stringify(updatedContent, null, 2)
@@ -62,7 +62,7 @@ module.exports = function(context, data) {
 function getGeo(itr, cb) {
   let curr = itr.next();
   if (curr.done) {
-    // All done processing; pass the (now-populated) entries to the next callback
+    // All done processing- pass the (now-populated) entries to the next callback
     cb(curr.data);
     return;
   }
