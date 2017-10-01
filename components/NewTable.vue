@@ -1,6 +1,15 @@
 <template>
   <div class="tablecontain">
-    <p>You can sort the table by clicking on each heading</p>
+    <label for="filterLabel">Filter By</label>
+    <select id="filterLabel" name="select" v-model="selectedFilter">
+      <option v-for="column in columns" key="column" :value="column">
+        {{ column }}
+      </option>
+    </select>
+    <span v-if="selectedFilter">
+      <label for="filterText" class="hidden">{{ selectedFilter }}</label>
+      <input id="filteredText" type="text" name="textfield" v-model="filteredText"></input>
+    </span>
     <table class="scroll">
       <thead>
         <tr>
@@ -10,7 +19,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(post, i) in speakerData">
+        <tr v-for="(post, i) in filteredData">
           <td v-for="entry in columns">
             {{ post[entry] }}
           </td>
@@ -22,12 +31,31 @@
 
 <script>
 export default {
+  data() {
+    return {
+      filteredText: '',
+      selectedFilter: ''
+    }
+  },
+  methods: {
+    sortHighest() {
+      this.ratingsInfo.sort((a, b) => a.rating < b.rating ? 1 : -1);
+    }
+  },
   computed: {
     speakerData() {
       return this.$store.state.speakerData;
     },
     columns() {
       return this.$store.state.speakingColumns;
+    },
+    filteredData() {
+      const x = this.selectedFilter,
+        filter = new RegExp(this.filteredText, 'i')
+      return this.speakerData.filter(el => {
+        if (el[x] !== undefined) { return el[x].match(filter) }
+        else return true;
+      })
     }
   }
 }
@@ -47,6 +75,41 @@ p {
   color: #80B822;
 }
 
+input,
+select,
+option {
+  font-family: "Open Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+select,
+input[type="text"] {
+  margin: 0 0 0 8px;
+  background: transparent;
+  color: #b1afb8;
+  font-size: 16px;
+  border: 1px solid #4f4d53;
+  line-height: 20px;
+  position: relative;
+  z-index: 3000;
+  border-radius: 4px;
+  padding: 2px 0;
+}
+
+
+input[type="text"] {
+  background: #121212;
+  transition: 0.3s all ease;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 tr:nth-child(2n) {
   background: rgba(255, 255, 255, 0.08);
 }
@@ -64,7 +127,7 @@ table {
   height: 100vh;
   position: relative;
   z-index: 300;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .scroll {
