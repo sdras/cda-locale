@@ -429,11 +429,14 @@ export default {
   },
   computed: {
     speakerData() {
+      // we're getting this data from the vuex store, so it's best as a computed value
       return this.$store.state.speakerData;
     },
     yearsArr() {
+      //create it as an object first because that's more efficient than an array
       let endUnit = {};
       this.speakerData.forEach(function(index) {
+        //we'll need to get the year from the end of the string
         let year = index.From.substr(index.From.length - 4),
           lat = index.Latitude,
           long = index.Longitude,
@@ -441,14 +444,15 @@ export default {
           magBase = 0.1;
 
         if (lat === undefined || long === undefined) return;
+        //because the pins are grouped together by magnitude, as we build out the data, we need to check if one exists or increment the value
         if (year in endUnit) {
 
+          //if we already have this location (stored together as key) let's increment it
           if (key in endUnit[year]) {
             endUnit[year][key][2] += magBase
           } else {
             endUnit[year][key] = [lat, long, magBase]
           }
-
         } else {
           let y = {};
           y[key] = [lat, long, magBase];
@@ -468,12 +472,14 @@ export default {
       return area;
     },
     yearsFlat() {
+      //we really just need the two years so for easy retrieval, let's flatten and condense it
       let x = [].concat.apply([], this.yearsArr);
       x = x.filter((_, i) => (i + 1) % 2);
       return x;
     }
   },
   mounted() {
+    //we have to load the texture when it's mounted and pass it in
     let earthmap = THREE.ImageUtils.loadTexture('/world4.jpg');
     this.initGlobe(earthmap);
   }

@@ -1,20 +1,20 @@
 <template>
   <section>
     <h1>Cloud Developer Advocate Speaking</h1>
-    <h3>Node, JavaScript, Python</h3>
-    <new-table></new-table>
-    <globe></globe>
+    <h3>Microsoft Azure</h3>
+    <speaking-table></speaking-table>
+    <speaking-globe></speaking-globe>
   </section>
 </template>
 
 <script>
-import Globe from '~/components/Globe.vue'
-import NewTable from '~/components/NewTable.vue'
+import SpeakingGlobe from '~/components/SpeakingGlobe.vue'
+import SpeakingTable from '~/components/SpeakingTable.vue'
 
 export default {
   components: {
-    Globe,
-    NewTable,
+    SpeakingGlobe,
+    SpeakingTable,
   },
 }
 </script>

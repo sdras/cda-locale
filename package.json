@@ -2,7 +2,7 @@
   "name": "cda-locale",
   "version": "1.0.0",
   "description":
-    "Showing where all of the Node MS Cloud Developer Advocates will be speaking",
+    "Showing where all of the MS Cloud Developer Advocates will be speaking",
   "author": "sdras <sarah.drasner@gmail.com>",
   "private": true,
   "scripts": {
@@ -19,7 +19,6 @@
     "nuxt": "^1.0.0-rc8",
     "pug": "^2.0.0-rc.4",
     "three": "^0.87.1",
-    "vue-resource": "^1.3.4",
     "vuex": "^2.4.0"
   },
   "devDependencies": {
