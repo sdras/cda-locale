@@ -35,7 +35,9 @@
     "From": "Sep 4, 2017",
     "To": "Sep 5, 2017",
     "Location": "Paris",
-    "Link": "https://webanimationworkshops.com/"
+    "Link": "https://webanimationworkshops.com/",
+    "Latitude": 48.856614,
+    "Longitude": 2.3522219
   },
   {
     "Name": "Simona Cotin",
@@ -93,7 +95,9 @@
     "From": "Sep 20, 2017",
     "To": "Sep 22, 2017",
     "Location": "Atlanta",
-    "Link": ""
+    "Link": "",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Asim Hussain",
@@ -101,7 +105,9 @@
     "From": "Sep 21, 2017",
     "To": "Sep 22, 2017",
     "Location": "Warsaw, Poland",
-    "Link": ""
+    "Link": "",
+    "Latitude": 52.2296756,
+    "Longitude": 21.0122287
   },
   {
     "Name": "Sarah Drasner",
@@ -189,7 +195,9 @@
     "From": "Oct 4, 2017",
     "To": "Oct 6, 2017",
     "Location": "Vancouver",
-    "Link": "http://events.linuxfoundation.org/events/node-interactive"
+    "Link": "http://events.linuxfoundation.org/events/node-interactive",
+    "Latitude": 49.2827291,
+    "Longitude": -123.1207375
   },
   {
     "Name": "Sarah Drasner",
@@ -517,6 +525,8 @@
     "From": "Apr 18 2017",
     "To": "Apr 21 2017",
     "Location": "Romania",
-    "Link": "https://jsheroes.io/"
+    "Link": "https://jsheroes.io/",
+    "Latitude": 45.943161,
+    "Longitude": 24.96676
   }
 ]
