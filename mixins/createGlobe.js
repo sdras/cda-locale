@@ -438,7 +438,20 @@ export const createGlobe = {
       }
 
       let data = this.yearsArr;
+      // Pad the data
+      let maxLen = 0;
+      for (let i = 0; i < data.length; i++) {
+        maxLen = Math.max(data[i][1].length, maxLen);
+      }
+
+      for (let i = 0; i < data.length; i++) {
+        let len = data[i][1].length;
+        for (let j = len; j < maxLen; j++) {
+          data[i][1].push(0, 0, 0);
+        }
+      }
       window.data = data;
+
       for (let i = 0; i < data.length; i++) {
         globe.addData(data[i][1], {
           format: 'magnitude',
