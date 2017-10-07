@@ -181,7 +181,6 @@ export const createGlobe = {
             if (this._baseGeometry === undefined) {
               this._baseGeometry = new THREE.Geometry();
               for (i = 0; i < data.length; i += step) {
-                console.log(data[i]);
                 lat = data[i];
                 lng = data[i + 1];
                 color = colorFnWrapper(data, i);
@@ -465,6 +464,11 @@ export const createGlobe = {
       settime(globe, 0)();
       globe.animate();
       document.body.style.backgroundImage = 'none'; // remove loading
+    }
+  },
+  watcher: {
+    yearsArr() {
+      console.log('changed');
     }
   },
   mounted() {

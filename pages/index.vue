@@ -2,8 +2,20 @@
   <section>
     <h1>Cloud Developer Advocate Speaking</h1>
     <h3>Microsoft Azure</h3>
-    <speaking-table></speaking-table>
-    <speaking-globe></speaking-globe>
+    <div class="tablecontain">
+      <label for="filterLabel">Filter By</label>
+      <select id="filterLabel" name="select" v-model="selectedFilter">
+        <option v-for="column in columns" key="column" :value="column">
+          {{ column }}
+        </option>
+      </select>
+      <span v-if="selectedFilter">
+        <label for="filterText" class="hidden">{{ selectedFilter }}</label>
+        <input id="filteredText" type="text" name="textfield" v-model="filteredText"></input>
+      </span>
+      <speaking-table :filteredData="filteredData"></speaking-table>
+    </div>
+    <speaking-globe :filteredData="filteredData"></speaking-globe>
   </section>
 </template>
 
@@ -16,6 +28,28 @@ export default {
     SpeakingGlobe,
     SpeakingTable,
   },
+  data() {
+    return {
+      filteredText: '',
+      selectedFilter: ''
+    }
+  },
+  computed: {
+    speakerData() {
+      return this.$store.state.speakerData;
+    },
+    columns() {
+      return this.$store.state.speakingColumns;
+    },
+    filteredData() {
+      const x = this.selectedFilter,
+        filter = new RegExp(this.filteredText, 'i')
+      return this.speakerData.filter(el => {
+        if (el[x] !== undefined) { return el[x].match(filter) }
+        else return true;
+      })
+    }
+  }
 }
 </script>
 
@@ -40,8 +74,46 @@ section {
   padding: 40px;
 }
 
-a,
-a:visited {
-  color: #5AB4FC;
+input,
+select,
+option {
+  font-family: "Open Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+select,
+input[type="text"] {
+  margin: 0 0 0 8px;
+  background: transparent;
+  color: #b1afb8;
+  font-size: 16px;
+  border: 1px solid #4f4d53;
+  line-height: 20px;
+  position: relative;
+  z-index: 3000;
+  border-radius: 4px;
+  padding: 2px 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+input[type="text"] {
+  background: #121212;
+  transition: 0.3s all ease;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.tablecontain {
+  margin: 50px 0 0 0;
 }
 </style>
