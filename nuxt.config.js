@@ -11,10 +11,16 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content:
-          'Showing where all of the Node MS Cloud Developer Advocates will be speaking'
+          'Showing where all of the Microsoft Cloud Developer Advocates will be speaking'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: 'https://c.s-microsoft.com/favicon.ico?v2'
+      }
+    ],
     link: [
       {
         rel: 'stylesheet',
