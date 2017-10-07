@@ -181,6 +181,7 @@ export const createGlobe = {
             if (this._baseGeometry === undefined) {
               this._baseGeometry = new THREE.Geometry();
               for (i = 0; i < data.length; i += step) {
+                console.log(data[i]);
                 lat = data[i];
                 lng = data[i + 1];
                 color = colorFnWrapper(data, i);
@@ -439,17 +440,18 @@ export const createGlobe = {
 
       let data = this.yearsArr;
       // Pad the data
-      // let maxLen = 0;
-      // for (let i = 0; i < data.length; i++) {
-      //   maxLen = Math.max(data[i][1].length, maxLen);
-      // }
+      let maxLen = 0;
+      for (let i = 0; i < data.length; i++) {
+        maxLen = Math.max(data[i][1].length, maxLen);
+      }
 
-      // for (let i = 0; i < data.length; i++) {
-      //   let len = data[i][1].length;
-      //   for (let j = len; j < maxLen; j++) {
-      //     data[i][1].push(0, 0, 0);
-      //   }
-      // }
+      for (let i = 0; i < data.length; i++) {
+        let len = data[i][1].length;
+        for (let j = len; j < maxLen; j++) {
+          data[i][1].push(0, 0, 0);
+        }
+      }
+      console.log(data);
       window.data = data;
 
       for (let i = 0; i < data.length; i++) {

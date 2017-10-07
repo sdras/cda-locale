@@ -39,11 +39,6 @@ export default {
       selectedFilter: ''
     }
   },
-  methods: {
-    sortHighest() {
-      this.ratingsInfo.sort((a, b) => a.rating < b.rating ? 1 : -1);
-    }
-  },
   computed: {
     speakerData() {
       return this.$store.state.speakerData;
