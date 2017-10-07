@@ -69,6 +69,13 @@ table {
   margin-top: 15px;
 }
 
+@media (max-width: 800px) {
+  table {
+    width: 200vw;
+    overflow-y: scroll;
+  }
+}
+
 .scroll {
   border: 0;
   border-collapse: collapse;

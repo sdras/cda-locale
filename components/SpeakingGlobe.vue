@@ -2,7 +2,7 @@
   <div>
     <div id="container"></div>
 
-    <div class="yeartoggle">
+    <div class="yeartoggle hidden">
       <span v-for="year in yearsFlat" key="year" class="year" :id="year">{{year}}</span>
     </div>
 
@@ -98,6 +98,16 @@ body {
   position: fixed;
   right: -100px;
   top: 20%;
+}
+
+@media (max-width: 800px) {
+  #container {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    left: 40px;
+    top: 150px;
+  }
 }
 
 #info {

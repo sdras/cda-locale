@@ -453,7 +453,7 @@ export const createGlobe = {
       console.log(data);
       window.data = data;
 
-      for (let i = 0; i < data.length; i++) {
+      for (let i = 0; i < 1; i++) {
         globe.addData(data[i][1], {
           format: 'magnitude',
           name: data[i][0],

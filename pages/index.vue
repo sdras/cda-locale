@@ -3,6 +3,7 @@
     <h1>Cloud Developer Advocate Speaking</h1>
     <h3>Microsoft Azure</h3>
     <div class="tablecontain">
+      <p class="mobiletext">You can scroll right to view the rest of the table, but it's easier to read on wider screens</p>
       <label for="filterLabel">Filter By</label>
       <select id="filterLabel" name="select" v-model="selectedFilter">
         <option v-for="column in columns" key="column" :value="column">
@@ -15,6 +16,7 @@
       </span>
       <speaking-table :filteredData="filteredData"></speaking-table>
     </div>
+    <more-info></more-info>
     <speaking-globe :filteredData="filteredData"></speaking-globe>
   </section>
 </template>
@@ -22,11 +24,13 @@
 <script>
 import SpeakingGlobe from '~/components/SpeakingGlobe.vue'
 import SpeakingTable from '~/components/SpeakingTable.vue'
+import MoreInfo from '~/components/MoreInfo.vue'
 
 export default {
   components: {
     SpeakingGlobe,
     SpeakingTable,
+    MoreInfo,
   },
   data() {
     return {
@@ -66,8 +70,13 @@ h3 {
   font-weight: 300;
 }
 
-h3 {
+h3,
+p {
   color: #5AB4FC;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 section {
@@ -115,5 +124,19 @@ input[type="text"] {
 
 .tablecontain {
   margin: 50px 0 0 0;
+}
+
+@media (max-width: 800px) {
+  .tablecontain {
+    margin: 350px 0 0 0;
+    width: 80vw;
+    overflow: scroll;
+  }
+}
+
+@media (min-width: 600px) {
+  .mobiletext {
+    display: none;
+  }
 }
 </style>
