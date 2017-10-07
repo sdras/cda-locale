@@ -5,7 +5,9 @@
     "From": "3/13/2017",
     "To": "3/17/2017",
     "Location": "Las Vegas",
-    "Link": "https://vslive.com/Home.aspx"
+    "Link": "https://vslive.com/Home.aspx",
+    "Latitude": 36.1699412,
+    "Longitude": -115.1398296
   },
   {
     "Name": "Abel Wang",
@@ -13,7 +15,9 @@
     "From": "3/20/2017",
     "To": "3/21/2017",
     "Location": "Amsterdam",
-    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx"
+    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx",
+    "Latitude": 52.3702157,
+    "Longitude": 4.895167900000001
   },
   {
     "Name": "Abel Wang",
@@ -21,7 +25,9 @@
     "From": "3/20/2017",
     "To": "3/21/2017",
     "Location": "Milan",
-    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx"
+    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx",
+    "Latitude": 45.4642035,
+    "Longitude": 9.189982
   },
   {
     "Name": "Abel Wang",
@@ -29,7 +35,9 @@
     "From": "4/26/2017",
     "To": "4/27/2017",
     "Location": "Seoul",
-    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx"
+    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx",
+    "Latitude": 37.566535,
+    "Longitude": 126.9779692
   },
   {
     "Name": "Abel Wang",
@@ -37,7 +45,9 @@
     "From": "6/19/2017",
     "To": "6/21/2017",
     "Location": "San Jose",
-    "Link": "https://conferences.oreilly.com/velocity/vl-ca"
+    "Link": "https://conferences.oreilly.com/velocity/vl-ca",
+    "Latitude": 37.3382082,
+    "Longitude": -121.8863286
   },
   {
     "Name": "Abel Wang",
@@ -45,7 +55,9 @@
     "From": "8/15/2017",
     "To": "8/16/2017",
     "Location": "Redmond",
-    "Link": "https://vslive.com/Home.aspx"
+    "Link": "https://vslive.com/Home.aspx",
+    "Latitude": 47.6739881,
+    "Longitude": -122.121512
   },
   {
     "Name": "Abel Wang",
@@ -53,7 +65,9 @@
     "From": "8/29/2017",
     "To": "8/31/2017",
     "Location": "San Francisco",
-    "Link": "https://www.cloudbees.com/jenkinsworld/home"
+    "Link": "https://www.cloudbees.com/jenkinsworld/home",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Abel Wang",
@@ -61,7 +75,9 @@
     "From": "9/7/2017",
     "To": "9/7/2017",
     "Location": "Minneapolis",
-    "Link": ""
+    "Link": "",
+    "Latitude": 44.977753,
+    "Longitude": -93.2650108
   },
   {
     "Name": "Abel Wang",
@@ -69,7 +85,9 @@
     "From": "9/20/2017",
     "To": "9/21/2017",
     "Location": "Redmond",
-    "Link": "https://vspartner.com/external/summit2017"
+    "Link": "https://vspartner.com/external/summit2017",
+    "Latitude": 47.6739881,
+    "Longitude": -122.121512
   },
   {
     "Name": "Abel Wang",
@@ -77,7 +95,9 @@
     "From": "9/24/2017",
     "To": "9/29/2017",
     "Location": "Orlando, FL",
-    "Link": "https://www.microsoft.com/en-us/ignite/default.aspx"
+    "Link": "https://www.microsoft.com/en-us/ignite/default.aspx",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Abel Wang",
@@ -85,7 +105,9 @@
     "From": "10/2/2017",
     "To": "10/2/2017",
     "Location": "Minneapolis",
-    "Link": "http://mdc.ilmservice.com/"
+    "Link": "http://mdc.ilmservice.com/",
+    "Latitude": 44.977753,
+    "Longitude": -93.2650108
   },
   {
     "Name": "Abel Wang",
@@ -93,7 +115,9 @@
     "From": "10/10/2017",
     "To": "10/11/2017",
     "Location": "Budapest",
-    "Link": ""
+    "Link": "",
+    "Latitude": 47.497912,
+    "Longitude": 19.040235
   },
   {
     "Name": "Abel Wang",
@@ -101,7 +125,9 @@
     "From": "10/16/2017",
     "To": "10/17/2017",
     "Location": "Anaheim",
-    "Link": "https://vslive.com/Home.aspx"
+    "Link": "https://vslive.com/Home.aspx",
+    "Latitude": 33.8365932,
+    "Longitude": -117.9143012
   },
   {
     "Name": "Abel Wang",
@@ -109,7 +135,9 @@
     "From": "11/1/2017",
     "To": "11/2/2017",
     "Location": "Houston, TX",
-    "Link": ""
+    "Link": "",
+    "Latitude": 29.7604267,
+    "Longitude": -95.3698028
   },
   {
     "Name": "Abel Wang",
@@ -117,7 +145,9 @@
     "From": "11/9/2017",
     "To": "11/10/2017",
     "Location": "Bangkok",
-    "Link": ""
+    "Link": "",
+    "Latitude": 13.7563309,
+    "Longitude": 100.5017651
   },
   {
     "Name": "Abel Wang",
@@ -125,7 +155,9 @@
     "From": "11/15/2017",
     "To": "11/17/2017",
     "Location": "NYC",
-    "Link": "https://www.microsoft.com/en-us/connectevent"
+    "Link": "https://www.microsoft.com/en-us/connectevent",
+    "Latitude": 40.7134248,
+    "Longitude": -74.00552449999999
   },
   {
     "Name": "Abel Wang",
@@ -133,7 +165,9 @@
     "From": "3/20/2017",
     "To": "3/21/2017",
     "Location": "Amsterdam",
-    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx"
+    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx",
+    "Latitude": 52.3702157,
+    "Longitude": 4.895167900000001
   },
   {
     "Name": "Abel Wang",
@@ -141,7 +175,9 @@
     "From": "3/20/2017",
     "To": "3/21/2017",
     "Location": "Milan",
-    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx"
+    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx",
+    "Latitude": 45.4642035,
+    "Longitude": 9.189982
   },
   {
     "Name": "Abel Wang",
@@ -149,7 +185,9 @@
     "From": "4/26/2017",
     "To": "4/27/2017",
     "Location": "Seoul",
-    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx"
+    "Link": "https://www.microsoft.com/en-us/techsummit/default.aspx",
+    "Latitude": 37.566535,
+    "Longitude": 126.9779692
   },
   {
     "Name": "Abel Wang",
@@ -157,7 +195,9 @@
     "From": "9/24/2017",
     "To": "9/29/2017",
     "Location": "Orlando, FL",
-    "Link": "https://www.microsoft.com/en-us/ignite/default.aspx"
+    "Link": "https://www.microsoft.com/en-us/ignite/default.aspx",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Alena Hall",
@@ -165,8 +205,9 @@
     "From": "5/8/2017",
     "To": "5/11/2017",
     "Location": "Austin, TX",
-    "Link":
-      "https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/56877"
+    "Link": "https://conferences.oreilly.com/oscon/oscon-tx/public/schedule/detail/56877",
+    "Latitude": 30.267153,
+    "Longitude": -97.7430608
   },
   {
     "Name": "Alena Hall",
@@ -174,8 +215,9 @@
     "From": "6/21/2017",
     "To": "6/21/2017",
     "Location": "Seattle, WA",
-    "Link":
-      "https://www.meetup.com/Seattle-Scalability-Meetup/events/239225314/"
+    "Link": "https://www.meetup.com/Seattle-Scalability-Meetup/events/239225314/",
+    "Latitude": 47.6062095,
+    "Longitude": -122.3320708
   },
   {
     "Name": "Alena Hall",
@@ -183,7 +225,9 @@
     "From": "9/28/2017",
     "To": "9/30/2017",
     "Location": "San Francisco, CA",
-    "Link": "http://www.openfsharp.org/schedule.html"
+    "Link": "http://www.openfsharp.org/schedule.html",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Anthony Chu",
@@ -191,7 +235,9 @@
     "From": "8/25/2017",
     "To": "8/26/2017",
     "Location": "Vancouver",
-    "Link": "http://www.sqlsaturday.com/635/"
+    "Link": "http://www.sqlsaturday.com/635/",
+    "Latitude": 49.2827291,
+    "Longitude": -123.1207375
   },
   {
     "Name": "Anthony Chu",
@@ -199,7 +245,9 @@
     "From": "9/8/2017",
     "To": "9/9/2017",
     "Location": "Seattle",
-    "Link": "https://seattle.codecamp.us/"
+    "Link": "https://seattle.codecamp.us/",
+    "Latitude": 47.6062095,
+    "Longitude": -122.3320708
   },
   {
     "Name": "Ashley McNamara",
@@ -207,7 +255,9 @@
     "From": "4/27/2017",
     "To": "3/31/2017",
     "Location": "Budapest",
-    "Link": ""
+    "Link": "",
+    "Latitude": 47.497912,
+    "Longitude": 19.040235
   },
   {
     "Name": "Ashley McNamara",
@@ -215,7 +265,9 @@
     "From": "5/8/2017",
     "To": "5/11/2017",
     "Location": "Austin",
-    "Link": ""
+    "Link": "",
+    "Latitude": 30.267153,
+    "Longitude": -97.7430608
   },
   {
     "Name": "Ashley McNamara",
@@ -223,7 +275,9 @@
     "From": "9/25/2017",
     "To": "9/27/2017",
     "Location": "Austin",
-    "Link": ""
+    "Link": "",
+    "Latitude": 30.267153,
+    "Longitude": -97.7430608
   },
   {
     "Name": "Ashley McNamara",
@@ -231,7 +285,9 @@
     "From": "10/16/2017",
     "To": "10/19/2017",
     "Location": "Copenhagen",
-    "Link": ""
+    "Link": "",
+    "Latitude": 55.6760968,
+    "Longitude": 12.5683372
   },
   {
     "Name": "Ashley McNamara",
@@ -239,7 +295,9 @@
     "From": "10/24/2017",
     "To": "10/24/2017",
     "Location": "Seattle",
-    "Link": ""
+    "Link": "",
+    "Latitude": 47.6062095,
+    "Longitude": -122.3320708
   },
   {
     "Name": "Ashley McNamara",
@@ -247,7 +305,9 @@
     "From": "10/25/2017",
     "To": "10/25/2017",
     "Location": "Seattle",
-    "Link": ""
+    "Link": "",
+    "Latitude": 47.6062095,
+    "Longitude": -122.3320708
   },
   {
     "Name": "Ashley McNamara",
@@ -255,7 +315,9 @@
     "From": "11/13/2017",
     "To": "11/17/2017",
     "Location": "Brazil",
-    "Link": ""
+    "Link": "",
+    "Latitude": -14.235004,
+    "Longitude": -51.92528
   },
   {
     "Name": "Ashley McNamara",
@@ -263,7 +325,9 @@
     "From": "7/13/2017",
     "To": "7/15/2017",
     "Location": "Denver",
-    "Link": ""
+    "Link": "",
+    "Latitude": 39.7392358,
+    "Longitude": -104.990251
   },
   {
     "Name": "Ashley McNamara",
@@ -271,7 +335,9 @@
     "From": "8/16/2017",
     "To": "8/18/2017",
     "Location": "London",
-    "Link": ""
+    "Link": "",
+    "Latitude": 51.5073509,
+    "Longitude": -0.1277583
   },
   {
     "Name": "Ashley McNamara",
@@ -279,7 +345,9 @@
     "From": "9/7/2017",
     "To": "9/8/2017",
     "Location": "Raleigh",
-    "Link": ""
+    "Link": "",
+    "Latitude": 35.7795897,
+    "Longitude": -78.6381787
   },
   {
     "Name": "Ashley McNamara",
@@ -287,7 +355,9 @@
     "From": "10/25/2017",
     "To": "10/25/2017",
     "Location": "Austin",
-    "Link": ""
+    "Link": "",
+    "Latitude": 30.267153,
+    "Longitude": -97.7430608
   },
   {
     "Name": "Asim Hussain",
@@ -295,7 +365,9 @@
     "From": "3/16/2017",
     "To": "3/16/2017",
     "Location": "Amsterdam",
-    "Link": "https://ng-nl.org/"
+    "Link": "https://ng-nl.org/",
+    "Latitude": 52.3702157,
+    "Longitude": 4.895167900000001
   },
   {
     "Name": "Asim Hussain",
@@ -303,7 +375,9 @@
     "From": "4/18/2017",
     "To": "4/20/2017",
     "Location": "Salt Lake City",
-    "Link": "https://www.ng-conf.org/"
+    "Link": "https://www.ng-conf.org/",
+    "Latitude": 40.7607793,
+    "Longitude": -111.8910474
   },
   {
     "Name": "Asim Hussain",
@@ -311,7 +385,9 @@
     "From": "6/7/2017",
     "To": "7/7/2017",
     "Location": "Barcelona",
-    "Link": "https://2017.angularcamp.org/"
+    "Link": "https://2017.angularcamp.org/",
+    "Latitude": 41.3850639,
+    "Longitude": 2.1734035
   },
   {
     "Name": "Asim Hussain",
@@ -319,7 +395,9 @@
     "From": "7/25/2017",
     "To": "7/25/2017",
     "Location": "Tel Aviv",
-    "Link": "http://angular-up.com/"
+    "Link": "http://angular-up.com/",
+    "Latitude": 32.0852999,
+    "Longitude": 34.78176759999999
   },
   {
     "Name": "Asim Hussain",
@@ -327,7 +405,9 @@
     "From": "8/26/2017",
     "To": "8/26/2017",
     "Location": "Lviv",
-    "Link": "http://lvivjs.org.ua/"
+    "Link": "http://lvivjs.org.ua/",
+    "Latitude": 49.839683,
+    "Longitude": 24.029717
   },
   {
     "Name": "Asim Hussain",
@@ -335,7 +415,9 @@
     "From": "9/20/2017",
     "To": "9/22/2017",
     "Location": "Warsaw",
-    "Link": "http://frontend-con.io/"
+    "Link": "http://frontend-con.io/",
+    "Latitude": 52.2296756,
+    "Longitude": 21.0122287
   },
   {
     "Name": "Asim Hussain",
@@ -343,7 +425,9 @@
     "From": "10/18/2017",
     "To": "10/20/2017",
     "Location": "Nantes",
-    "Link": "https://devfest.gdgnantes.com/"
+    "Link": "https://devfest.gdgnantes.com/",
+    "Latitude": 47.218371,
+    "Longitude": -1.553621
   },
   {
     "Name": "Asim Hussain",
@@ -351,7 +435,9 @@
     "From": "10/28/2017",
     "To": "10/29/2017",
     "Location": "Kharkiv",
-    "Link": "http://kharkivjs.org/"
+    "Link": "http://kharkivjs.org/",
+    "Latitude": 49.9935,
+    "Longitude": 36.230383
   },
   {
     "Name": "Asim Hussain",
@@ -359,7 +445,9 @@
     "From": "11/6/2017",
     "To": "11/8/2017",
     "Location": "London",
-    "Link": "https://www.angularconnect.com/"
+    "Link": "https://www.angularconnect.com/",
+    "Latitude": 51.5073509,
+    "Longitude": -0.1277583
   },
   {
     "Name": "Asim Hussain",
@@ -367,7 +455,9 @@
     "From": "11/18/2017",
     "To": "11/19/2017",
     "Location": "Montreal",
-    "Link": "https://2017.pycon.ca/"
+    "Link": "https://2017.pycon.ca/",
+    "Latitude": 45.5016889,
+    "Longitude": -73.567256
   },
   {
     "Name": "Asim Hussain",
@@ -375,7 +465,9 @@
     "From": "11/27/2017",
     "To": "11/28/2017",
     "Location": "London",
-    "Link": "http://finjs.io/"
+    "Link": "http://finjs.io/",
+    "Latitude": 51.5073509,
+    "Longitude": -0.1277583
   },
   {
     "Name": "Asim Hussain",
@@ -383,7 +475,9 @@
     "From": "12/4/2017",
     "To": "12/6/2017",
     "Location": "Krakow",
-    "Link": "https://www.codeeurope.pl/"
+    "Link": "https://www.codeeurope.pl/",
+    "Latitude": 50.06465009999999,
+    "Longitude": 19.9449799
   },
   {
     "Name": "Asim Hussain",
@@ -391,7 +485,9 @@
     "From": "12/8/2017",
     "To": "12/8/2017",
     "Location": "Belgium",
-    "Link": "https://ng-be.org"
+    "Link": "https://ng-be.org",
+    "Latitude": 50.503887,
+    "Longitude": 4.469936
   },
   {
     "Name": "Brian Benz",
@@ -399,7 +495,9 @@
     "From": "9/28/2017",
     "To": "10/5/2017",
     "Location": "San Francisco",
-    "Link": "https://www.pluralsight.com/event-details/2017/live-2017"
+    "Link": "https://www.pluralsight.com/event-details/2017/live-2017",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Brian Benz",
@@ -407,7 +505,9 @@
     "From": "10/1/2017",
     "To": "10/3/2017",
     "Location": "San Francisco",
-    "Link": "https://vslive.com/events/redmond-2017"
+    "Link": "https://vslive.com/events/redmond-2017",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Brian Benz",
@@ -415,7 +515,9 @@
     "From": "10/23/2017",
     "To": "10/26/2017",
     "Location": "Ludwigdburg",
-    "Link": "https://www.golanguk.com/"
+    "Link": "https://www.golanguk.com/",
+    "Latitude": 48.8940624,
+    "Longitude": 9.195464
   },
   {
     "Name": "Brian Benz",
@@ -423,7 +525,9 @@
     "From": "10/29/2017",
     "To": "10/30/2017",
     "Location": "Belfast",
-    "Link": "https://uptime.events/"
+    "Link": "https://uptime.events/",
+    "Latitude": 54.59728500000001,
+    "Longitude": -5.93012
   },
   {
     "Name": "Brian Benz",
@@ -431,8 +535,9 @@
     "From": "10/30/2017",
     "To": "10/31/2017",
     "Location": "Dublin",
-    "Link":
-      "https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=42620"
+    "Link": "https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=42620",
+    "Latitude": 53.3498053,
+    "Longitude": -6.2603097
   },
   {
     "Name": "Brian Benz",
@@ -440,7 +545,9 @@
     "From": "10/31/2017",
     "To": "11/2/2017",
     "Location": "Utrecht",
-    "Link": "https://ng-atl.org"
+    "Link": "https://ng-atl.org",
+    "Latitude": 52.09073739999999,
+    "Longitude": 5.1214201
   },
   {
     "Name": "Brian Benz",
@@ -448,7 +555,9 @@
     "From": "11/5/2017",
     "To": "11/10/2017",
     "Location": "Malmo",
-    "Link": "lvivjs.org.ua"
+    "Link": "lvivjs.org.ua",
+    "Latitude": 55.604981,
+    "Longitude": 13.003822
   },
   {
     "Name": "Brian Benz",
@@ -456,7 +565,9 @@
     "From": "11/13/2017",
     "To": "11/16/2017",
     "Location": "Morocco",
-    "Link": ""
+    "Link": "",
+    "Latitude": 31.791702,
+    "Longitude": -7.092619999999999
   },
   {
     "Name": "Brian Benz",
@@ -464,7 +575,9 @@
     "From": "11/27/2017",
     "To": "12/7/2017",
     "Location": "San Francisco",
-    "Link": "https://yougottalovefrontend.com/"
+    "Link": "https://yougottalovefrontend.com/",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Brian Clark",
@@ -472,7 +585,9 @@
     "From": "1/30/2018",
     "To": "2/2/2018",
     "Location": "Atlanta",
-    "Link": "https://www.cloudbees.com/jenkinsworld/home"
+    "Link": "https://www.cloudbees.com/jenkinsworld/home",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Brian Clark",
@@ -480,7 +595,9 @@
     "From": "9/22/2017",
     "To": "9/29/2017",
     "Location": "Orlando",
-    "Link": "http://angularconnect.com/"
+    "Link": "http://angularconnect.com/",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Brian Clark",
@@ -488,7 +605,9 @@
     "From": "10/3/2017",
     "To": "10/6/2017",
     "Location": "Vancouver",
-    "Link": "https://www.microsoft.com/en-us/ignite/"
+    "Link": "https://www.microsoft.com/en-us/ignite/",
+    "Latitude": 49.2827291,
+    "Longitude": -123.1207375
   },
   {
     "Name": "Brian Clark",
@@ -496,7 +615,9 @@
     "From": "10/9/2017",
     "To": "10/12/2017",
     "Location": "Orlando",
-    "Link": "\"Serverless tour\""
+    "Link": "\"Serverless tour\"",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Brian Clark",
@@ -504,7 +625,9 @@
     "From": "4/18/2017",
     "To": "5/24/2017",
     "Location": "Orlando",
-    "Link": ""
+    "Link": "",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Brian Clark",
@@ -512,7 +635,9 @@
     "From": "10/28/2017",
     "To": "10/31/2017",
     "Location": "Las Vegas",
-    "Link": "https://2017.fullstackfest.com/"
+    "Link": "https://2017.fullstackfest.com/",
+    "Latitude": 36.1699412,
+    "Longitude": -115.1398296
   },
   {
     "Name": "Brian Clark",
@@ -520,7 +645,9 @@
     "From": "11/17/2017",
     "To": "11/28/2017",
     "Location": "Nashville",
-    "Link": ""
+    "Link": "",
+    "Latitude": 36.1626638,
+    "Longitude": -86.7816016
   },
   {
     "Name": "Brian Clark",
@@ -528,7 +655,9 @@
     "From": "11/12/2017",
     "To": "11/17/2017",
     "Location": "Orlando",
-    "Link": ""
+    "Link": "",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Brian Ketelsen",
@@ -536,7 +665,9 @@
     "From": "11/6/2017",
     "To": "11/6/2017",
     "Location": "London",
-    "Link": "https://eventloom.com/event/home/summit2017"
+    "Link": "https://eventloom.com/event/home/summit2017",
+    "Latitude": 51.5073509,
+    "Longitude": -0.1277583
   },
   {
     "Name": "Brian Ketelsen",
@@ -544,7 +675,9 @@
     "From": "11/10/2017",
     "To": "11/11/2017",
     "Location": "Milan",
-    "Link": ""
+    "Link": "",
+    "Latitude": 45.4642035,
+    "Longitude": 9.189982
   },
   {
     "Name": "Bridget Kromhout",
@@ -552,7 +685,9 @@
     "From": "3/13/2017",
     "To": "3/14/2017",
     "Location": "San Francisco",
-    "Link": "http://devupconf.org/"
+    "Link": "http://devupconf.org/",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Bridget Kromhout",
@@ -560,7 +695,9 @@
     "From": "4/19/2017",
     "To": "4/21/2017",
     "Location": "Boston, MA",
-    "Link": "http://visfest.com/d3unconf-2017/"
+    "Link": "http://visfest.com/d3unconf-2017/",
+    "Latitude": 42.3600825,
+    "Longitude": -71.0588801
   },
   {
     "Name": "Bridget Kromhout",
@@ -568,7 +705,9 @@
     "From": "5/1/2017",
     "To": "5/4/2017",
     "Location": "Chicago",
-    "Link": "https://www.devopsdays.org/events/2017-raleigh/welcome/"
+    "Link": "https://www.devopsdays.org/events/2017-raleigh/welcome/",
+    "Latitude": 41.8781136,
+    "Longitude": -87.6297982
   },
   {
     "Name": "Bridget Kromhout",
@@ -576,7 +715,9 @@
     "From": "6/8/2017",
     "To": "6/8/2017",
     "Location": "Minneapolis",
-    "Link": ""
+    "Link": "",
+    "Latitude": 44.977753,
+    "Longitude": -93.2650108
   },
   {
     "Name": "Bridget Kromhout",
@@ -584,7 +725,9 @@
     "From": "6/13/2017",
     "To": "6/15/2017",
     "Location": "Santa Clara",
-    "Link": ""
+    "Link": "",
+    "Latitude": 37.3541079,
+    "Longitude": -121.9552356
   },
   {
     "Name": "Bridget Kromhout",
@@ -592,7 +735,9 @@
     "From": "6/19/2017",
     "To": "6/22/2017",
     "Location": "San Jose",
-    "Link": ""
+    "Link": "",
+    "Latitude": 37.3382082,
+    "Longitude": -121.8863286
   },
   {
     "Name": "Bridget Kromhout",
@@ -600,8 +745,9 @@
     "From": "8/24/2017",
     "To": "8/25/2017",
     "Location": "Pittsburgh",
-    "Link":
-      "http://events.linuxfoundation.org/events/open-source-summit-north-america"
+    "Link": "http://events.linuxfoundation.org/events/open-source-summit-north-america",
+    "Latitude": 40.44062479999999,
+    "Longitude": -79.9958864
   },
   {
     "Name": "Bridget Kromhout",
@@ -609,8 +755,9 @@
     "From": "10/24/2017",
     "To": "10/25/2017",
     "Location": "Philadelphia",
-    "Link":
-      "https://blog.jeremylikness.com/atlanta-code-camp-2017-serverless-net-da640edd59e9"
+    "Link": "https://blog.jeremylikness.com/atlanta-code-camp-2017-serverless-net-da640edd59e9",
+    "Latitude": 39.9525839,
+    "Longitude": -75.1652215
   },
   {
     "Name": "Bridget Kromhout",
@@ -618,7 +765,9 @@
     "From": "4/2/2017",
     "To": "4/5/2017",
     "Location": "New York City, NY",
-    "Link": "http://finjs.io/"
+    "Link": "http://finjs.io/",
+    "Latitude": 40.7134248,
+    "Longitude": -74.00552449999999
   },
   {
     "Name": "Bridget Kromhout",
@@ -626,7 +775,9 @@
     "From": "10/23/2017",
     "To": "10/24/2017",
     "Location": "Raleigh",
-    "Link": "https://allthingsopen.org/"
+    "Link": "https://allthingsopen.org/",
+    "Latitude": 35.7795897,
+    "Longitude": -78.6381787
   },
   {
     "Name": "Burke Holland",
@@ -634,7 +785,9 @@
     "From": "9/19/2017",
     "To": "9/22/2017",
     "Location": "Atlanta",
-    "Link": "http://connect.tech"
+    "Link": "http://connect.tech",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Burke Holland",
@@ -642,7 +795,9 @@
     "From": "9/24/2017",
     "To": "9/26/2017",
     "Location": "Toronto, Canada",
-    "Link": "http://fitc.ca/event/webu17/"
+    "Link": "http://fitc.ca/event/webu17/",
+    "Latitude": 43.653226,
+    "Longitude": -79.3831843
   },
   {
     "Name": "Burke Holland",
@@ -650,7 +805,9 @@
     "From": "10/13/2017",
     "To": "10/16/2017",
     "Location": "St. Louis",
-    "Link": "http://devupconf.org/"
+    "Link": "http://devupconf.org/",
+    "Latitude": 38.6270025,
+    "Longitude": -90.19940419999999
   },
   {
     "Name": "Burke Holland",
@@ -658,7 +815,9 @@
     "From": "10/19/2017",
     "To": "10/20/2017",
     "Location": "Online",
-    "Link": "https://certifiedfreshevents.com/"
+    "Link": "https://certifiedfreshevents.com/",
+    "Latitude": 33.655959,
+    "Longitude": -111.929279
   },
   {
     "Name": "Burke Holland",
@@ -666,7 +825,9 @@
     "From": "10/31/2017",
     "To": "11/2/2017",
     "Location": "Las Vegas",
-    "Link": "https://www.devintersection.com/#!/"
+    "Link": "https://www.devintersection.com/#!/",
+    "Latitude": 36.1699412,
+    "Longitude": -115.1398296
   },
   {
     "Name": "Burke Holland",
@@ -674,7 +835,9 @@
     "From": "11/12/2017",
     "To": "11/14/2017",
     "Location": "Sofia Bulgaria",
-    "Link": "http://devreach.com/"
+    "Link": "http://devreach.com/",
+    "Latitude": 42.6977082,
+    "Longitude": 23.3218675
   },
   {
     "Name": "Damian Brady",
@@ -682,7 +845,9 @@
     "From": "9/25/2017",
     "To": "9/29/2017",
     "Location": "Orlando",
-    "Link": "https://www.microsoft.com/en-us/ignite/default.aspx"
+    "Link": "https://www.microsoft.com/en-us/ignite/default.aspx",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Damian Brady",
@@ -690,7 +855,9 @@
     "From": "10/4/2017",
     "To": "10/6/2017",
     "Location": "Pennsylvania",
-    "Link": "https://techbash.com/"
+    "Link": "https://techbash.com/",
+    "Latitude": 41.2033216,
+    "Longitude": -77.1945247
   },
   {
     "Name": "Damian Brady",
@@ -698,7 +865,9 @@
     "From": "10/10/2017",
     "To": "10/12/2017",
     "Location": "Winnipeg",
-    "Link": "http://www.prdcdeliver.com/"
+    "Link": "http://www.prdcdeliver.com/",
+    "Latitude": 49.895136,
+    "Longitude": -97.13837439999999
   },
   {
     "Name": "Damian Brady",
@@ -706,7 +875,9 @@
     "From": "10/11/2017",
     "To": "10/13/2017",
     "Location": "Amsterdam",
-    "Link": "https://www.techdays.nl/"
+    "Link": "https://www.techdays.nl/",
+    "Latitude": 52.3702157,
+    "Longitude": 4.895167900000001
   },
   {
     "Name": "Damian Brady",
@@ -714,8 +885,9 @@
     "From": "11/7/2017",
     "To": "11/17/2017",
     "Location": "Orlando",
-    "Link":
-      "https://vslive.com/ECG/live360events/Events/Orlando-2017/VSLive.aspx"
+    "Link": "https://vslive.com/ECG/live360events/Events/Orlando-2017/VSLive.aspx",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Damian Brady",
@@ -723,7 +895,9 @@
     "From": "12/4/2017",
     "To": "12/6/2017",
     "Location": "Vancouver",
-    "Link": "https://confoo.ca/en/yvr2017"
+    "Link": "https://confoo.ca/en/yvr2017",
+    "Latitude": 49.2827291,
+    "Longitude": -123.1207375
   },
   {
     "Name": "Donovan Brown",
@@ -731,7 +905,9 @@
     "From": "5/21/2017",
     "To": "5/24/2017",
     "Location": "Orlando",
-    "Link": "https://devintersection.com/#!/Visual-Studio-ASP-Azure-Conference/"
+    "Link": "https://devintersection.com/#!/Visual-Studio-ASP-Azure-Conference/",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Donovan Brown",
@@ -755,7 +931,9 @@
     "From": "6/6/2017",
     "To": "6/6/2017",
     "Location": "Glasgow",
-    "Link": "https://scottishdevelopers.com/"
+    "Link": "https://scottishdevelopers.com/",
+    "Latitude": 55.864237,
+    "Longitude": -4.251806
   },
   {
     "Name": "Donovan Brown",
@@ -763,7 +941,9 @@
     "From": "6/7/2017",
     "To": "6/7/2017",
     "Location": "Edinburgh",
-    "Link": "https://scottishdevelopers.com/"
+    "Link": "https://scottishdevelopers.com/",
+    "Latitude": 55.953252,
+    "Longitude": -3.188267
   },
   {
     "Name": "Donovan Brown",
@@ -771,7 +951,9 @@
     "From": "6/8/2017",
     "To": "6/8/2017",
     "Location": "Aberdeen",
-    "Link": "https://scottishdevelopers.com/"
+    "Link": "https://scottishdevelopers.com/",
+    "Latitude": 57.149717,
+    "Longitude": -2.094278
   },
   {
     "Name": "Donovan Brown",
@@ -779,8 +961,9 @@
     "From": "6/12/2017",
     "To": "6/12/2017",
     "Location": "Cambridge",
-    "Link":
-      "https://www.meetup.com/Cambridge-NET-User-Group/events/237509818/?utm_content=bufferaede2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer"
+    "Link": "https://www.meetup.com/Cambridge-NET-User-Group/events/237509818/?utm_content=bufferaede2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer",
+    "Latitude": 52.2042666,
+    "Longitude": 0.1149085
   },
   {
     "Name": "Donovan Brown",
@@ -788,7 +971,9 @@
     "From": "6/14/2017",
     "To": "6/14/2017",
     "Location": "Stockholm",
-    "Link": "https://www.meetup.com/swedish-ms-alm-devops/events/237449414/"
+    "Link": "https://www.meetup.com/swedish-ms-alm-devops/events/237449414/",
+    "Latitude": 59.32932349999999,
+    "Longitude": 18.0685808
   },
   {
     "Name": "Donovan Brown",
@@ -796,7 +981,9 @@
     "From": "6/19/2017",
     "To": "6/19/2017",
     "Location": "Aarhus",
-    "Link": "https://www.facebook.com/events/252955858443355/"
+    "Link": "https://www.facebook.com/events/252955858443355/",
+    "Latitude": 56.162939,
+    "Longitude": 10.203921
   },
   {
     "Name": "Donovan Brown",
@@ -804,7 +991,9 @@
     "From": "6/22/2017",
     "To": "6/22/2017",
     "Location": "Copenhagen",
-    "Link": ""
+    "Link": "",
+    "Latitude": 55.6760968,
+    "Longitude": 12.5683372
   },
   {
     "Name": "Donovan Brown",
@@ -812,7 +1001,9 @@
     "From": "6/24/2017",
     "To": "6/24/2017",
     "Location": "Munich",
-    "Link": "https://azuresaturday.de/"
+    "Link": "https://azuresaturday.de/",
+    "Latitude": 48.1351253,
+    "Longitude": 11.5819805
   },
   {
     "Name": "Donovan Brown",
@@ -820,7 +1011,9 @@
     "From": "6/26/2017",
     "To": "6/29/2017",
     "Location": "Nurmberg",
-    "Link": "http://www.developer-week.de/"
+    "Link": "http://www.developer-week.de/",
+    "Latitude": 49.4521018,
+    "Longitude": 11.0766654
   },
   {
     "Name": "Jeremy Likness",
@@ -828,36 +1021,39 @@
     "From": "2/22/2017",
     "To": "2/22/2017",
     "Location": "Atlanta, GA",
-    "Link": "https://github.com/JeremyLikness/ng2ts-workshop-v2"
+    "Link": "https://github.com/JeremyLikness/ng2ts-workshop-v2",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Jeremy Likness",
-    "Conference":
-      "Code Career Academy: TypeScript, JavaScript's Safety Harness",
+    "Conference": "Code Career Academy: TypeScript, JavaScript's Safety Harness",
     "From": "3/23/2017",
     "To": "3/23/2017",
     "Location": "Lawrenceville, GA",
-    "Link":
-      "https://www.meetup.com/Code-Career-Academy-Meetups-Gwinnett/events/237645432/"
+    "Link": "https://www.meetup.com/Code-Career-Academy-Meetups-Gwinnett/events/237645432/",
+    "Latitude": 33.9562149,
+    "Longitude": -83.9879625
   },
   {
     "Name": "Jeremy Likness",
-    "Conference":
-      "Music City Code 2017: Rapid Dev with Angular and TypeScript and Contain Your Excitement (Docker)",
+    "Conference": "Music City Code 2017: Rapid Dev with Angular and TypeScript and Contain Your Excitement (Docker)",
     "From": "6/1/2017",
     "To": "6/3/2017",
     "Location": "Nashville, TN",
-    "Link": "https://blog.jeremylikness.com/music-city-code-2017-e78e6279a60b"
+    "Link": "https://blog.jeremylikness.com/music-city-code-2017-e78e6279a60b",
+    "Latitude": 36.1626638,
+    "Longitude": -86.7816016
   },
   {
     "Name": "Jeremy Likness",
-    "Conference":
-      "We Rise Women in Tech Conference 2017: Contain Your Excitement (Docker)",
+    "Conference": "We Rise Women in Tech Conference 2017: Contain Your Excitement (Docker)",
     "From": "6/23/2017",
     "To": "6/24/2017",
     "Location": "Atlanta, GA",
-    "Link":
-      "https://werise.tech/sessions/2017/4/16/contain-your-excitement-hands-on-docker"
+    "Link": "https://werise.tech/sessions/2017/4/16/contain-your-excitement-hands-on-docker",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Jeremy Likness",
@@ -865,18 +1061,19 @@
     "From": "8/14/2017",
     "To": "8/14/2017",
     "Location": "Atlanta, GA",
-    "Link":
-      "https://blog.jeremylikness.com/herding-cattle-with-the-azure-container-service-acs-e329e7def93e"
+    "Link": "https://blog.jeremylikness.com/herding-cattle-with-the-azure-container-service-acs-e329e7def93e",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Jeremy Likness",
-    "Conference":
-      "Atlanta .NET User Group: Explore the Cosmos (DB) with .NET Core 2.0",
+    "Conference": "Atlanta .NET User Group: Explore the Cosmos (DB) with .NET Core 2.0",
     "From": "8/28/2017",
     "To": "8/28/2017",
     "Location": "Alpharetta, GA",
-    "Link":
-      "https://blog.jeremylikness.com/explore-the-cosmos-db-with-net-core-2-0-aab48423dcdc"
+    "Link": "https://blog.jeremylikness.com/explore-the-cosmos-db-with-net-core-2-0-aab48423dcdc",
+    "Latitude": 34.0753762,
+    "Longitude": -84.2940899
   },
   {
     "Name": "Jeremy Likness",
@@ -884,8 +1081,9 @@
     "From": "9/16/2017",
     "To": "9/16/2017",
     "Location": "Marietta, GA",
-    "Link":
-      "https://blog.jeremylikness.com/atlanta-code-camp-2017-serverless-net-da640edd59e9"
+    "Link": "https://blog.jeremylikness.com/atlanta-code-camp-2017-serverless-net-da640edd59e9",
+    "Latitude": 33.95260200000001,
+    "Longitude": -84.5499327
   },
   {
     "Name": "Jeremy Likness",
@@ -893,18 +1091,19 @@
     "From": "9/19/2017",
     "To": "9/19/2017",
     "Location": "Atlanta, GA",
-    "Link":
-      "https://blog.jeremylikness.com/google-developer-group-atlanta-serverless-node-js-functions-2ec8d987a4b1"
+    "Link": "https://blog.jeremylikness.com/google-developer-group-atlanta-serverless-node-js-functions-2ec8d987a4b1",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Jeremy Likness",
-    "Conference":
-      "Connect.TECH 2017: All Day Node Camp and TypeScript for Node.js Presentation",
+    "Conference": "Connect.TECH 2017: All Day Node Camp and TypeScript for Node.js Presentation",
     "From": "9/20/2017",
     "To": "9/22/2017",
     "Location": "Atlanta, GA",
-    "Link":
-      "https://blog.jeremylikness.com/connect-tech-2017-node-js-and-typescript-8419b0e4d689"
+    "Link": "https://blog.jeremylikness.com/connect-tech-2017-node-js-and-typescript-8419b0e4d689",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Jeremy Likness",
@@ -912,7 +1111,9 @@
     "From": "9/25/2017",
     "To": "9/29/2017",
     "Location": "Orlando, FL",
-    "Link": "https://microsoft.com/ignite"
+    "Link": "https://microsoft.com/ignite",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Jeremy Likness",
@@ -920,16 +1121,19 @@
     "From": "10/6/2017",
     "To": "10/7/2017",
     "Location": "Charlotte, NC",
-    "Link": " "
+    "Link": " ",
+    "Latitude": 35.2270869,
+    "Longitude": -80.8431267
   },
   {
     "Name": "Jeremy Likness",
-    "Conference":
-      "Cloud Storage and Bay Area Lambda Meetup: Code First, Going Serverless",
+    "Conference": "Cloud Storage and Bay Area Lambda Meetup: Code First, Going Serverless",
     "From": "10/17/2017",
     "To": "10/17/2017",
     "Location": "San Francisco, CA",
-    "Link": "https://www.meetup.com/Cloud-Storage-Bay-Area/events/243386936/"
+    "Link": "https://www.meetup.com/Cloud-Storage-Bay-Area/events/243386936/",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Jeremy Likness",
@@ -937,7 +1141,9 @@
     "From": "10/18/2017",
     "To": "10/18/2017",
     "Location": "Bay Area, CA",
-    "Link": "https://www.meetup.com/SF-Microservices/events/243921541/"
+    "Link": "https://www.meetup.com/SF-Microservices/events/243921541/",
+    "Latitude": 37.8271784,
+    "Longitude": -122.2913078
   },
   {
     "Name": "Jeremy Likness",
@@ -945,16 +1151,19 @@
     "From": "10/19/2017",
     "To": "10/19/2017",
     "Location": "Mountain View, CA",
-    "Link": "https://www.meetup.com/microservices/events/243498016/"
+    "Link": "https://www.meetup.com/microservices/events/243498016/",
+    "Latitude": 37.3860517,
+    "Longitude": -122.0838511
   },
   {
     "Name": "Jeremy Likness",
-    "Conference":
-      "PASS Summit 2017: Web API Design Workshop and Swagger Presentation",
+    "Conference": "PASS Summit 2017: Web API Design Workshop and Swagger Presentation",
     "From": "10/30/2017",
     "To": "11/3/2017",
     "Location": "Seattle, WA",
-    "Link": "http://www.pass.org/Summit/2017/Speakers/Details.aspx?spid=5787"
+    "Link": "http://www.pass.org/Summit/2017/Speakers/Details.aspx?spid=5787",
+    "Latitude": 47.6062095,
+    "Longitude": -122.3320708
   },
   {
     "Name": "Jeremy Likness",
@@ -962,7 +1171,9 @@
     "From": "2/20/2018",
     "To": "2/20/2018",
     "Location": "Atlanta, GA",
-    "Link": "https://www.meetup.com/Azure-in-the-ATL/events/243464450/"
+    "Link": "https://www.meetup.com/Azure-in-the-ATL/events/243464450/",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Jeremy Likness",
@@ -970,7 +1181,9 @@
     "From": "9/25/2017",
     "To": "9/29/2017",
     "Location": "Orlando",
-    "Link": "https://www.microsoft.com/en-us/ignite/"
+    "Link": "https://www.microsoft.com/en-us/ignite/",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "John Papa",
@@ -978,7 +1191,9 @@
     "From": "1/30/2017",
     "To": "2/2/2017",
     "Location": "Atlanta, GA",
-    "Link": "http://ng-atl.org/"
+    "Link": "http://ng-atl.org/",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "John Papa",
@@ -986,7 +1201,9 @@
     "From": "4/18/2018",
     "To": "4/29/2018",
     "Location": "Salt Lake City",
-    "Link": "https://www.ng-conf.org/"
+    "Link": "https://www.ng-conf.org/",
+    "Latitude": 40.7607793,
+    "Longitude": -111.8910474
   },
   {
     "Name": "John Papa",
@@ -994,7 +1211,9 @@
     "From": "9/18/2017",
     "To": "9/21/2017",
     "Location": "Salt Lake City",
-    "Link": "https://www.pluralsight.com/event-details/2017"
+    "Link": "https://www.pluralsight.com/event-details/2017",
+    "Latitude": 40.7607793,
+    "Longitude": -111.8910474
   },
   {
     "Name": "John Papa",
@@ -1002,7 +1221,9 @@
     "From": "9/24/2017",
     "To": "9/24/2017",
     "Location": "Orlando",
-    "Link": "https://www.microsoft.com/en-us/ignite/default.aspx"
+    "Link": "https://www.microsoft.com/en-us/ignite/default.aspx",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "John Papa",
@@ -1010,7 +1231,9 @@
     "From": "10/10/2017",
     "To": "10/12/2017",
     "Location": "Orlando",
-    "Link": "http://angularmix.com"
+    "Link": "http://angularmix.com",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "John Papa",
@@ -1018,7 +1241,9 @@
     "From": "10/14/2017",
     "To": "10/16/2017",
     "Location": "St. Louis",
-    "Link": "http://devupconf.org/"
+    "Link": "http://devupconf.org/",
+    "Latitude": 38.6270025,
+    "Longitude": -90.19940419999999
   },
   {
     "Name": "John Papa",
@@ -1026,7 +1251,9 @@
     "From": "10/29/2017",
     "To": "10/31/2017",
     "Location": "Las Vegas",
-    "Link": "htto://anglebrackets.org"
+    "Link": "htto://anglebrackets.org",
+    "Latitude": 36.1699412,
+    "Longitude": -115.1398296
   },
   {
     "Name": "John Papa",
@@ -1034,7 +1261,9 @@
     "From": "11/15/2017",
     "To": "11/17/2017",
     "Location": "Orlando",
-    "Link": "https://live360events.com/events/orlando-2017/home.aspx"
+    "Link": "https://live360events.com/events/orlando-2017/home.aspx",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "John Papa",
@@ -1042,7 +1271,9 @@
     "From": "10/23/2017",
     "To": "10/24/2017",
     "Location": "Raleigh",
-    "Link": "https://allthingsopen.org/"
+    "Link": "https://allthingsopen.org/",
+    "Latitude": 35.7795897,
+    "Longitude": -78.6381787
   },
   {
     "Name": "Laurent Bugnion",
@@ -1050,7 +1281,9 @@
     "From": "8/31/2017",
     "To": "9/2/2017",
     "Location": "Amsterdam",
-    "Link": ""
+    "Link": "",
+    "Latitude": 52.3702157,
+    "Longitude": 4.895167900000001
   },
   {
     "Name": "Laurent Bugnion",
@@ -1058,7 +1291,9 @@
     "From": "9/21/2017",
     "To": "9/23/2017",
     "Location": "Singapore",
-    "Link": ""
+    "Link": "",
+    "Latitude": 1.352083,
+    "Longitude": 103.819836
   },
   {
     "Name": "Matt Soucoup",
@@ -1066,7 +1301,9 @@
     "From": "3/23/2017",
     "To": "3/31/2017",
     "Location": "Indianapolis",
-    "Link": "https://indycode.amegala.com/"
+    "Link": "https://indycode.amegala.com/",
+    "Latitude": 39.768403,
+    "Longitude": -86.158068
   },
   {
     "Name": "Matt Soucoup",
@@ -1074,7 +1311,9 @@
     "From": "8/3/2017",
     "To": "8/9/2017",
     "Location": "Wisconsin Dells",
-    "Link": "https://www.thatconference.com"
+    "Link": "https://www.thatconference.com",
+    "Latitude": 43.6274794,
+    "Longitude": -89.7709579
   },
   {
     "Name": "Matt Soucoup",
@@ -1082,7 +1321,9 @@
     "From": "9/7/2017",
     "To": "9/8/2017",
     "Location": "Milwaukee",
-    "Link": "http://www.mkedotnet.com/"
+    "Link": "http://www.mkedotnet.com/",
+    "Latitude": 43.0389025,
+    "Longitude": -87.9064736
   },
   {
     "Name": "Matt Soucoup",
@@ -1090,7 +1331,9 @@
     "From": "9/19/2017",
     "To": "9/21/2017",
     "Location": "Chicago",
-    "Link": "https://vslive.com/Events/Chicago-2017/Home.aspx"
+    "Link": "https://vslive.com/Events/Chicago-2017/Home.aspx",
+    "Latitude": 41.8781136,
+    "Longitude": -87.6297982
   },
   {
     "Name": "Matt Soucoup",
@@ -1098,7 +1341,9 @@
     "From": "9/27/2017",
     "To": "9/29/2017",
     "Location": "Des Moines",
-    "Link": "https://prairiecode.amegala.com"
+    "Link": "https://prairiecode.amegala.com",
+    "Latitude": 41.6005448,
+    "Longitude": -93.6091064
   },
   {
     "Name": "Matt Soucoup",
@@ -1106,7 +1351,9 @@
     "From": "10/4/2017",
     "To": "10/6/2017",
     "Location": "Oslo",
-    "Link": "https://mobileera.rocks"
+    "Link": "https://mobileera.rocks",
+    "Latitude": 59.9138688,
+    "Longitude": 10.7522454
   },
   {
     "Name": "Matt Soucoup",
@@ -1114,7 +1361,9 @@
     "From": "1/8/2018",
     "To": "1/12/2018",
     "Location": "Sandusky",
-    "Link": "https://codemash.org"
+    "Link": "https://codemash.org",
+    "Latitude": 41.4489396,
+    "Longitude": -82.7079605
   },
   {
     "Name": "Maxime Rouiller",
@@ -1122,16 +1371,19 @@
     "From": "9/4/2017",
     "To": "9/5/2017",
     "Location": "Montreal",
-    "Link": "https://www.meetup.com/BelfastJUG/"
+    "Link": "https://www.meetup.com/BelfastJUG/",
+    "Latitude": 45.5016889,
+    "Longitude": -73.567256
   },
   {
     "Name": "Maxime Rouiller",
-    "Conference":
-      "Instrumenting .NET Core Applications with Azure Application Insights",
+    "Conference": "Instrumenting .NET Core Applications with Azure Application Insights",
     "From": "10/17/2017",
     "To": "10/17/2017",
     "Location": "Atlanta, GA",
-    "Link": "http://2017.cssdevconf.com/"
+    "Link": "http://2017.cssdevconf.com/",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Paige Bailey",
@@ -1139,7 +1391,9 @@
     "From": "7/6/2017",
     "To": "7/6/2017",
     "Location": "Houston, TX",
-    "Link": "https://www.meetup.com/Houston-Data-Science/events/240566684/"
+    "Link": "https://www.meetup.com/Houston-Data-Science/events/240566684/",
+    "Latitude": 29.7604267,
+    "Longitude": -95.3698028
   },
   {
     "Name": "Paige Bailey",
@@ -1147,8 +1401,9 @@
     "From": "7/22/2017",
     "To": "7/22/2017",
     "Location": "Houston, TX",
-    "Link":
-      "https://www.meetup.com/Houston-Data-Science/events/240417376/?_cookie-check=rmfKwWUeuVIzJ7Sk"
+    "Link": "https://www.meetup.com/Houston-Data-Science/events/240417376/?_cookie-check=rmfKwWUeuVIzJ7Sk",
+    "Latitude": 29.7604267,
+    "Longitude": -95.3698028
   },
   {
     "Name": "Paige Bailey",
@@ -1156,8 +1411,9 @@
     "From": "8/25/2017",
     "To": "8/25/2017",
     "Location": "Online",
-    "Link":
-      "https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=42620"
+    "Link": "https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=42620",
+    "Latitude": 33.655959,
+    "Longitude": -111.929279
   },
   {
     "Name": "Paige Bailey",
@@ -1165,7 +1421,9 @@
     "From": "9/19/2017",
     "To": "9/20/2017",
     "Location": "Detroit, MI",
-    "Link": "http://qltechcon.com/index.html"
+    "Link": "http://qltechcon.com/index.html",
+    "Latitude": 42.331427,
+    "Longitude": -83.0457538
   },
   {
     "Name": "Paige Bailey",
@@ -1173,7 +1431,9 @@
     "From": "10/7/2017",
     "To": "10/7/2017",
     "Location": "Miami, FL",
-    "Link": "http://flpy.org/"
+    "Link": "http://flpy.org/",
+    "Latitude": 25.7616798,
+    "Longitude": -80.1917902
   },
   {
     "Name": "Paige Bailey",
@@ -1181,7 +1441,9 @@
     "From": "10/14/2017",
     "To": "10/15/2017",
     "Location": "New York City, NY",
-    "Link": "http://codecampnyc.org/selected-sessions/"
+    "Link": "http://codecampnyc.org/selected-sessions/",
+    "Latitude": 40.7134248,
+    "Longitude": -74.00552449999999
   },
   {
     "Name": "Paige Bailey",
@@ -1189,7 +1451,9 @@
     "From": "10/26/2017",
     "To": "10/27/2017",
     "Location": "Zurich",
-    "Link": "http://jazoon.com/"
+    "Link": "http://jazoon.com/",
+    "Latitude": 47.3768866,
+    "Longitude": 8.541694
   },
   {
     "Name": "Paige Bailey",
@@ -1197,7 +1461,9 @@
     "From": "10/28/2017",
     "To": "10/29/2017",
     "Location": "Austin, TX",
-    "Link": "https://hacktx.com/"
+    "Link": "https://hacktx.com/",
+    "Latitude": 30.267153,
+    "Longitude": -97.7430608
   },
   {
     "Name": "Paige Bailey",
@@ -1205,7 +1471,9 @@
     "From": "10/28/2017",
     "To": "10/28/2017",
     "Location": "Austin, TX",
-    "Link": "http://societyofwomenengineers.swe.org/invent-it-build-it"
+    "Link": "http://societyofwomenengineers.swe.org/invent-it-build-it",
+    "Latitude": 30.267153,
+    "Longitude": -97.7430608
   },
   {
     "Name": "Paige Bailey",
@@ -1213,7 +1481,9 @@
     "From": "11/7/2017",
     "To": "11/9/2017",
     "Location": "Austin, TX",
-    "Link": "http://www.developerweek.com/Austin/"
+    "Link": "http://www.developerweek.com/Austin/",
+    "Latitude": 30.267153,
+    "Longitude": -97.7430608
   },
   {
     "Name": "Paige Bailey",
@@ -1221,7 +1491,9 @@
     "From": "11/13/2017",
     "To": "11/15/2017",
     "Location": "Bulgaria",
-    "Link": "http://devreach.com/"
+    "Link": "http://devreach.com/",
+    "Latitude": 42.733883,
+    "Longitude": 25.48583
   },
   {
     "Name": "Paige Bailey",
@@ -1229,7 +1501,9 @@
     "From": "11/24/2017",
     "To": "11/25/2017",
     "Location": "Madrid",
-    "Link": "https://2017.codemotion.es/en/"
+    "Link": "https://2017.codemotion.es/en/",
+    "Latitude": 40.4167754,
+    "Longitude": -3.7037902
   },
   {
     "Name": "Paige Bailey",
@@ -1237,7 +1511,9 @@
     "From": "11/27/2017",
     "To": "11/30/2017",
     "Location": "New York City, NY",
-    "Link": "https://pydata.org/nyc2017/"
+    "Link": "https://pydata.org/nyc2017/",
+    "Latitude": 40.7134248,
+    "Longitude": -74.00552449999999
   },
   {
     "Name": "Ruediger Schickhaus",
@@ -1245,8 +1521,9 @@
     "From": "10/24/2017",
     "To": "10/24/2017",
     "Location": "Vienna",
-    "Link":
-      "https://www.meetup.com/Code-Career-Academy-Meetups-Gwinnett/events/237645432/"
+    "Link": "https://www.meetup.com/Code-Career-Academy-Meetups-Gwinnett/events/237645432/",
+    "Latitude": 48.2081743,
+    "Longitude": 16.3738189
   },
   {
     "Name": "Sarah Drasner",
@@ -1254,7 +1531,9 @@
     "From": "2/15/2017",
     "To": "2/15/2017",
     "Location": "Online",
-    "Link": "http://environmentsforhumans.com/2017/svg-summit/"
+    "Link": "http://environmentsforhumans.com/2017/svg-summit/",
+    "Latitude": 33.655959,
+    "Longitude": -111.929279
   },
   {
     "Name": "Sarah Drasner",
@@ -1262,7 +1541,9 @@
     "From": "2/20/2017",
     "To": "2/20/2017",
     "Location": "San Francisco",
-    "Link": "https://webanimationworkshops.com/"
+    "Link": "https://webanimationworkshops.com/",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Sarah Drasner",
@@ -1270,7 +1551,9 @@
     "From": "3/4/2017",
     "To": "3/4/2017",
     "Location": "San Francisco",
-    "Link": "https://forwardjs.com/"
+    "Link": "https://forwardjs.com/",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Sarah Drasner",
@@ -1278,7 +1561,9 @@
     "From": "4/7/2017",
     "To": "4/7/2017",
     "Location": "San Francisco",
-    "Link": "https://www.meetup.com/sfhtml5/?_cookie-check=SZNcxB3cqM9_CCux"
+    "Link": "https://www.meetup.com/sfhtml5/?_cookie-check=SZNcxB3cqM9_CCux",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Sarah Drasner",
@@ -1286,7 +1571,9 @@
     "From": "4/4/2017",
     "To": "4/6/2017",
     "Location": "San Francisco",
-    "Link": "https://smashingconf.com/workshops/sarah-drasner"
+    "Link": "https://smashingconf.com/workshops/sarah-drasner",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Sarah Drasner",
@@ -1294,7 +1581,9 @@
     "From": "4/23/2017",
     "To": "4/25/2017",
     "Location": "Toronto, Canada",
-    "Link": "http://fitc.ca/event/to17/"
+    "Link": "http://fitc.ca/event/to17/",
+    "Latitude": 43.653226,
+    "Longitude": -79.3831843
   },
   {
     "Name": "Sarah Drasner",
@@ -1302,7 +1591,9 @@
     "From": "5/15/2017",
     "To": "5/17/2017",
     "Location": "Dusseldorf, Germany",
-    "Link": "https://beyondtellerrand.com/"
+    "Link": "https://beyondtellerrand.com/",
+    "Latitude": 51.2277411,
+    "Longitude": 6.7734556
   },
   {
     "Name": "Sarah Drasner",
@@ -1310,7 +1601,9 @@
     "From": "5/18/2017",
     "To": "5/18/2017",
     "Location": "Dusseldorf, Germany",
-    "Link": "https://beyondtellerrand.com/"
+    "Link": "https://beyondtellerrand.com/",
+    "Latitude": 51.2277411,
+    "Longitude": 6.7734556
   },
   {
     "Name": "Sarah Drasner",
@@ -1318,7 +1611,9 @@
     "From": "5/18/2017",
     "To": "5/19/2017",
     "Location": "Paris",
-    "Link": "https://www.react-europe.org/"
+    "Link": "https://www.react-europe.org/",
+    "Latitude": 48.856614,
+    "Longitude": 2.3522219
   },
   {
     "Name": "Sarah Drasner",
@@ -1326,7 +1621,9 @@
     "From": "6/1/2017",
     "To": "6/2/2017",
     "Location": "Los Angeles",
-    "Link": "https://conference.awwwards.com/"
+    "Link": "https://conference.awwwards.com/",
+    "Latitude": 34.0522342,
+    "Longitude": -118.2436849
   },
   {
     "Name": "Sarah Drasner",
@@ -1334,7 +1631,9 @@
     "From": "6/22/2017",
     "To": "6/23/2017",
     "Location": "Wroclaw, Poland",
-    "Link": "https://conf.vuejs.org/"
+    "Link": "https://conf.vuejs.org/",
+    "Latitude": 51.1078852,
+    "Longitude": 17.0385376
   },
   {
     "Name": "Sarah Drasner",
@@ -1342,7 +1641,9 @@
     "From": "6/21/2017",
     "To": "6/21/2017",
     "Location": "Wroclaw, Poland",
-    "Link": "https://conf.vuejs.org/workshops"
+    "Link": "https://conf.vuejs.org/workshops",
+    "Latitude": 51.1078852,
+    "Longitude": 17.0385376
   },
   {
     "Name": "Sarah Drasner",
@@ -1350,7 +1651,9 @@
     "From": "7/28/2017",
     "To": "7/29/2017",
     "Location": "Bangalore, India",
-    "Link": "http://jschannel.com/#/"
+    "Link": "http://jschannel.com/#/",
+    "Latitude": 12.9715987,
+    "Longitude": 77.5945627
   },
   {
     "Name": "Sarah Drasner",
@@ -1358,7 +1661,9 @@
     "From": "8/10/2017",
     "To": "8/11/2017",
     "Location": "Denver, Colorado",
-    "Link": "https://developdenver.org/"
+    "Link": "https://developdenver.org/",
+    "Latitude": 39.7392358,
+    "Longitude": -104.990251
   },
   {
     "Name": "Sarah Drasner",
@@ -1366,7 +1671,9 @@
     "From": "8/28/2017",
     "To": "9/1/2017",
     "Location": "Zurich",
-    "Link": "https://www.frontendconf.ch/"
+    "Link": "https://www.frontendconf.ch/",
+    "Latitude": 47.3768866,
+    "Longitude": 8.541694
   },
   {
     "Name": "Sarah Drasner",
@@ -1374,8 +1681,9 @@
     "From": "9/2/2017",
     "To": "9/2/2017",
     "Location": "Zurich",
-    "Link":
-      "https://www.frontendconf.ch/workshops/from-animations-to-data-visualisation"
+    "Link": "https://www.frontendconf.ch/workshops/from-animations-to-data-visualisation",
+    "Latitude": 47.3768866,
+    "Longitude": 8.541694
   },
   {
     "Name": "Sarah Drasner",
@@ -1383,7 +1691,9 @@
     "From": "9/2/2017",
     "To": "9/5/2017",
     "Location": "Paris",
-    "Link": "webanimationworkshops.com"
+    "Link": "webanimationworkshops.com",
+    "Latitude": 48.856614,
+    "Longitude": 2.3522219
   },
   {
     "Name": "Sarah Drasner",
@@ -1391,7 +1701,9 @@
     "From": "9/6/2017",
     "To": "9/8/2017",
     "Location": "Barcelona, Spain",
-    "Link": "https://2017.fullstackfest.com/"
+    "Link": "https://2017.fullstackfest.com/",
+    "Latitude": 41.3850639,
+    "Longitude": 2.1734035
   },
   {
     "Name": "Sarah Drasner",
@@ -1399,7 +1711,9 @@
     "From": "9/16/2017",
     "To": "9/19/2017",
     "Location": "Portland",
-    "Link": "webanimationworkshops.com"
+    "Link": "webanimationworkshops.com",
+    "Latitude": 45.5230622,
+    "Longitude": -122.6764815
   },
   {
     "Name": "Sarah Drasner",
@@ -1407,7 +1721,9 @@
     "From": "9/21/2017",
     "To": "9/22/2017",
     "Location": "San Francisco",
-    "Link": "http://visfest.com/d3unconf-2017/"
+    "Link": "http://visfest.com/d3unconf-2017/",
+    "Latitude": 37.7749295,
+    "Longitude": -122.4194155
   },
   {
     "Name": "Sarah Drasner",
@@ -1415,7 +1731,9 @@
     "From": "9/24/2017",
     "To": "9/24/2017",
     "Location": "Toronto, Canada",
-    "Link": "http://fitc.ca/presentation/workshop-building-animating-svgs/"
+    "Link": "http://fitc.ca/presentation/workshop-building-animating-svgs/",
+    "Latitude": 43.653226,
+    "Longitude": -79.3831843
   },
   {
     "Name": "Sarah Drasner",
@@ -1423,7 +1741,9 @@
     "From": "10/6/2017",
     "To": "10/10/2017",
     "Location": "New Orleans",
-    "Link": "http://2017.cssdevconf.com/"
+    "Link": "http://2017.cssdevconf.com/",
+    "Latitude": 29.95106579999999,
+    "Longitude": -90.0715323
   },
   {
     "Name": "Sarah Drasner",
@@ -1431,7 +1751,9 @@
     "From": "10/11/2017",
     "To": "10/11/2017",
     "Location": "New Orleans",
-    "Link": "http://2017.cssdevconf.com/"
+    "Link": "http://2017.cssdevconf.com/",
+    "Latitude": 29.95106579999999,
+    "Longitude": -90.0715323
   },
   {
     "Name": "Sarah Drasner",
@@ -1439,7 +1761,9 @@
     "From": "10/12/2017",
     "To": "10/13/2017",
     "Location": "Pittsburgh",
-    "Link": "webanimationworkshops.com"
+    "Link": "webanimationworkshops.com",
+    "Latitude": 40.44062479999999,
+    "Longitude": -79.9958864
   },
   {
     "Name": "Sarah Drasner",
@@ -1447,7 +1771,9 @@
     "From": "10/17/2017",
     "To": "10/18/2017",
     "Location": "Barcelona, Spain",
-    "Link": "https://smashingconf.com/barcelona-2017/workshops"
+    "Link": "https://smashingconf.com/barcelona-2017/workshops",
+    "Latitude": 41.3850639,
+    "Longitude": 2.1734035
   },
   {
     "Name": "Sarah Drasner",
@@ -1455,7 +1781,9 @@
     "From": "10/19/2017",
     "To": "10/19/2017",
     "Location": "Barcelona, Spain",
-    "Link": "https://smashingconf.com/barcelona-2017/workshops"
+    "Link": "https://smashingconf.com/barcelona-2017/workshops",
+    "Latitude": 41.3850639,
+    "Longitude": 2.1734035
   },
   {
     "Name": "Sarah Drasner",
@@ -1463,7 +1791,9 @@
     "From": "10/25/2017",
     "To": "10/28/2017",
     "Location": "Bratislava",
-    "Link": "https://reactiveconf.com/"
+    "Link": "https://reactiveconf.com/",
+    "Latitude": 48.1485965,
+    "Longitude": 17.1077478
   },
   {
     "Name": "Sarah Drasner",
@@ -1471,7 +1801,9 @@
     "From": "10/30/2017",
     "To": "10/31/2017",
     "Location": "Tel Aviv",
-    "Link": "https://yougottalovefrontend.com/"
+    "Link": "https://yougottalovefrontend.com/",
+    "Latitude": 32.0852999,
+    "Longitude": 34.78176759999999
   },
   {
     "Name": "Sarah Drasner",
@@ -1479,7 +1811,9 @@
     "From": "2/14/2018",
     "To": "2/16/2018",
     "Location": "Amsterdam",
-    "Link": "TBD"
+    "Link": "TBD",
+    "Latitude": 52.3702157,
+    "Longitude": 4.895167900000001
   },
   {
     "Name": "Sarah Drasner",
@@ -1487,8 +1821,9 @@
     "From": "7/11/2018",
     "To": "7/13/2018",
     "Location": "London, UK",
-    "Link":
-      "https://skillsmatter.com/conferences/9815-fullstack-2018-the-conference-on-javascript-node-and-internet-of-things"
+    "Link": "https://skillsmatter.com/conferences/9815-fullstack-2018-the-conference-on-javascript-node-and-internet-of-things",
+    "Latitude": 51.5073509,
+    "Longitude": -0.1277583
   },
   {
     "Name": "Sarah Drasner",
@@ -1496,7 +1831,9 @@
     "From": "5/31/2018",
     "To": "6/1/2018",
     "Location": "Utrecht",
-    "Link": "http://frontendunited.org/"
+    "Link": "http://frontendunited.org/",
+    "Latitude": 52.09073739999999,
+    "Longitude": 5.1214201
   },
   {
     "Name": "Scott Cate",
@@ -1504,7 +1841,9 @@
     "From": "9/4/2017",
     "To": "9/7/2017",
     "Location": "Tel Aviv",
-    "Link": ""
+    "Link": "",
+    "Latitude": 32.0852999,
+    "Longitude": 34.78176759999999
   },
   {
     "Name": "Shayne Boyer",
@@ -1512,7 +1851,9 @@
     "From": "9/18/2017",
     "To": "9/19/2017",
     "Location": "Stockholm",
-    "Link": "http://devintersectioneurope.com"
+    "Link": "http://devintersectioneurope.com",
+    "Latitude": 59.32932349999999,
+    "Longitude": 18.0685808
   },
   {
     "Name": "Shayne Boyer",
@@ -1520,7 +1861,9 @@
     "From": "10/10/2017",
     "To": "10/12/2017",
     "Location": "Orlando",
-    "Link": "https://angularmix.com/"
+    "Link": "https://angularmix.com/",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Shayne Boyer",
@@ -1528,7 +1871,9 @@
     "From": "10/29/2017",
     "To": "10/31/2017",
     "Location": "Las Vegas",
-    "Link": "http://devintersection.com"
+    "Link": "http://devintersection.com",
+    "Latitude": 36.1699412,
+    "Longitude": -115.1398296
   },
   {
     "Name": "Shayne Boyer",
@@ -1536,7 +1881,9 @@
     "From": "6/28/2018",
     "To": "10/19/2018",
     "Location": "Copenhagen",
-    "Link": "https://europe-2017.dockercon.com/"
+    "Link": "https://europe-2017.dockercon.com/",
+    "Latitude": 55.6760968,
+    "Longitude": 12.5683372
   },
   {
     "Name": "Shayne Boyer",
@@ -1544,7 +1891,9 @@
     "From": "9/25/2017",
     "To": "9/29/2017",
     "Location": "Orlando",
-    "Link": "https://www.microsoft.com/en-us/ignite/"
+    "Link": "https://www.microsoft.com/en-us/ignite/",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Simona Cotin",
@@ -1552,7 +1901,9 @@
     "From": "9/4/2017",
     "To": "9/7/2017",
     "Location": "Tel Aviv",
-    "Link": ""
+    "Link": "",
+    "Latitude": 32.0852999,
+    "Longitude": 34.78176759999999
   },
   {
     "Name": "Simona Cotin",
@@ -1560,7 +1911,9 @@
     "From": "9/5/2017",
     "To": "9/8/2017",
     "Location": "Tel Aviv",
-    "Link": ""
+    "Link": "",
+    "Latitude": 32.0852999,
+    "Longitude": 34.78176759999999
   },
   {
     "Name": "Simona Cotin",
@@ -1568,7 +1921,9 @@
     "From": "9/20/2017",
     "To": "9/20/2017",
     "Location": "Porto, Portugal",
-    "Link": ""
+    "Link": "",
+    "Latitude": 41.1579438,
+    "Longitude": -8.629105299999999
   },
   {
     "Name": "Simona Cotin",
@@ -1576,7 +1931,9 @@
     "From": "9/22/2017",
     "To": "9/23/2017",
     "Location": "Warsaw, Poland",
-    "Link": ""
+    "Link": "",
+    "Latitude": 52.2296756,
+    "Longitude": 21.0122287
   },
   {
     "Name": "Simona Cotin",
@@ -1584,7 +1941,9 @@
     "From": "10/10/2017",
     "To": "10/12/2017",
     "Location": "Orlando",
-    "Link": ""
+    "Link": "",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Simona Cotin",
@@ -1592,7 +1951,9 @@
     "From": "10/18/2017",
     "To": "10/20/2017",
     "Location": "Barcelona, Spain",
-    "Link": ""
+    "Link": "",
+    "Latitude": 41.3850639,
+    "Longitude": 2.1734035
   },
   {
     "Name": "Simona Cotin",
@@ -1600,7 +1961,9 @@
     "From": "10/19/2017",
     "To": "10/20/2017",
     "Location": "Nantes, France",
-    "Link": ""
+    "Link": "",
+    "Latitude": 47.218371,
+    "Longitude": -1.553621
   },
   {
     "Name": "Simona Cotin",
@@ -1608,7 +1971,9 @@
     "From": "11/2/2017",
     "To": "11/8/2017",
     "Location": "Kilkenny, Ireland",
-    "Link": ""
+    "Link": "",
+    "Latitude": 52.6541454,
+    "Longitude": -7.2447879
   },
   {
     "Name": "Simona Cotin",
@@ -1616,7 +1981,9 @@
     "From": "11/7/2017",
     "To": "11/8/2017",
     "Location": "London, UK",
-    "Link": ""
+    "Link": "",
+    "Latitude": 51.5073509,
+    "Longitude": -0.1277583
   },
   {
     "Name": "Simona Cotin",
@@ -1624,7 +1991,9 @@
     "From": "1/19/2018",
     "To": "2/2/2018",
     "Location": "Atlanta",
-    "Link": ""
+    "Link": "",
+    "Latitude": 33.7489954,
+    "Longitude": -84.3879824
   },
   {
     "Name": "Steven Murawski",
@@ -1632,7 +2001,9 @@
     "From": "4/9/2017",
     "To": "4/12/2017",
     "Location": "Bellevue, WA",
-    "Link": "https://powershell.org/summit/"
+    "Link": "https://powershell.org/summit/",
+    "Latitude": 47.6101497,
+    "Longitude": -122.2015159
   },
   {
     "Name": "Steven Murawski",
@@ -1640,7 +2011,9 @@
     "From": "5/20/2017",
     "To": "5/24/2017",
     "Location": "Orlando, FL",
-    "Link": "http://devintersection.com"
+    "Link": "http://devintersection.com",
+    "Latitude": 28.5383355,
+    "Longitude": -81.3792365
   },
   {
     "Name": "Steven Murawski",
@@ -1648,7 +2021,9 @@
     "From": "5/21/2017",
     "To": "5/24/2017",
     "Location": "Austin, TX",
-    "Link": "https://chefconf.chef.io/2017/"
+    "Link": "https://chefconf.chef.io/2017/",
+    "Latitude": 30.267153,
+    "Longitude": -97.7430608
   },
   {
     "Name": "Steven Murawski",
@@ -1656,8 +2031,9 @@
     "From": "7/27/2017",
     "To": "7/30/2017",
     "Location": "Las Vegas, NV",
-    "Link":
-      "https://www.eventbrite.com/e/devopsdsc-camp-2017-tickets-31137067808#"
+    "Link": "https://www.eventbrite.com/e/devopsdsc-camp-2017-tickets-31137067808#",
+    "Latitude": 36.1699412,
+    "Longitude": -115.1398296
   },
   {
     "Name": "Steven Murawski",
@@ -1665,8 +2041,9 @@
     "From": "8/3/2017",
     "To": "8/3/2017",
     "Location": "Appleton, WI",
-    "Link":
-      "http://www.wivmug.org/2017/07/thursday-august-3rd-2017-appleton-meeting/"
+    "Link": "http://www.wivmug.org/2017/07/thursday-august-3rd-2017-appleton-meeting/",
+    "Latitude": 44.2619309,
+    "Longitude": -88.41538469999999
   },
   {
     "Name": "Steven Murawski",
@@ -1674,7 +2051,9 @@
     "From": "9/20/2017",
     "To": "9/21/2017",
     "Location": "London",
-    "Link": "https://www.winops.org/london/"
+    "Link": "https://www.winops.org/london/",
+    "Latitude": 51.5073509,
+    "Longitude": -0.1277583
   },
   {
     "Name": "Steven Murawski",
@@ -1682,7 +2061,9 @@
     "From": "9/22/2017",
     "To": "9/22/2017",
     "Location": "London",
-    "Link": "https://psday.uk"
+    "Link": "https://psday.uk",
+    "Latitude": 51.5073509,
+    "Longitude": -0.1277583
   },
   {
     "Name": "Steven Murawski",
@@ -1690,7 +2071,9 @@
     "From": "10/12/2017",
     "To": "10/12/2017",
     "Location": "London",
-    "Link": "https://www.meetup.com/PowerShell-London-UK/events/243680102/"
+    "Link": "https://www.meetup.com/PowerShell-London-UK/events/243680102/",
+    "Latitude": 51.5073509,
+    "Longitude": -0.1277583
   },
   {
     "Name": "Steven Murawski",
@@ -1698,7 +2081,9 @@
     "From": "10/24/2017",
     "To": "10/26/2017",
     "Location": "Singapore",
-    "Link": "https://www.devopsdays.org/events/2017-singapore/"
+    "Link": "https://www.devopsdays.org/events/2017-singapore/",
+    "Latitude": 1.352083,
+    "Longitude": 103.819836
   },
   {
     "Name": "Steven Murawski",
@@ -1706,7 +2091,9 @@
     "From": "10/26/2017",
     "To": "10/28/2017",
     "Location": "Singapore",
-    "Link": "http://psconf.asia/"
+    "Link": "http://psconf.asia/",
+    "Latitude": 1.352083,
+    "Longitude": 103.819836
   },
   {
     "Name": "Steven Murawski",
@@ -1714,6 +2101,8 @@
     "From": "10/10/2017",
     "To": "10/11/2017",
     "Location": "London",
-    "Link": "https://www.chef.io/summits/"
+    "Link": "https://www.chef.io/summits/",
+    "Latitude": 51.5073509,
+    "Longitude": -0.1277583
   }
 ]
