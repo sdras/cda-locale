@@ -2,7 +2,7 @@
   <div>
     <div id="container"></div>
 
-    <div class="yeartoggle">
+    <div class="yeartoggle hidden">
       <span v-for="year in yearsFlat" key="year" class="year" :id="year">{{year}}</span>
     </div>
 
@@ -15,6 +15,13 @@ import { createGlobe } from './../mixins/createGlobe';
 
 export default {
   mixins: [createGlobe],
+  props: {
+    filteredData: {
+      type: Array,
+      required: true,
+      default: () => []
+    },
+  },
   computed: {
     speakerData() {
       // we're getting this data from the vuex store, so it's best as a computed value
@@ -23,7 +30,7 @@ export default {
     yearsArr() {
       //create it as an object first because that's more efficient than an array
       let endUnit = {};
-      this.speakerData.forEach(function(index) {
+      this.filteredData.forEach(function(index) {
         //we'll need to get the year from the end of the string
         let year = index.From.substr(index.From.length - 4),
           lat = index.Latitude,
@@ -91,6 +98,16 @@ body {
   position: fixed;
   right: -100px;
   top: 20%;
+}
+
+@media (max-width: 800px) {
+  #container {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    left: 40px;
+    top: 150px;
+  }
 }
 
 #info {
