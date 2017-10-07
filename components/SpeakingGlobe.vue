@@ -3,7 +3,7 @@
     <div id="container"></div>
 
     <div class="yeartoggle">
-      <span v-for="year in yearsFlat" key="year" class="year" :id="year">{{year}}</span>
+      <span v-for="year in yearsFlat" key="year" class="year" :id="year">20{{year}}</span>
     </div>
 
   </div>
@@ -25,7 +25,7 @@ export default {
       let endUnit = {};
       this.speakerData.forEach(function(index) {
         //we'll need to get the year from the end of the string
-        let year = index.From.substr(index.From.length - 4),
+        let year = index.From.substr(index.From.length - 2),
           lat = index.Latitude,
           long = index.Longitude,
           key = lat + ', ' + long,
@@ -57,6 +57,7 @@ export default {
         [year, places] = x[i];
         area.push([year, [].concat(...Object.values(places))])
       }
+      console.log(area)
       return area;
     },
     yearsFlat() {

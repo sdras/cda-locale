@@ -12,7 +12,7 @@ export const createGlobe = {
           opts.colorFn ||
           function(x) {
             let c = new THREE.Color();
-            c.setHSL(0.6 - x * 0.35, 1.0, 0.5);
+            c.setHSL(0.1 - x * 0.19, 1.0, 0.6);
             return c;
           };
 
@@ -439,17 +439,17 @@ export const createGlobe = {
 
       let data = this.yearsArr;
       // Pad the data
-      let maxLen = 0;
-      for (let i = 0; i < data.length; i++) {
-        maxLen = Math.max(data[i][1].length, maxLen);
-      }
+      // let maxLen = 0;
+      // for (let i = 0; i < data.length; i++) {
+      //   maxLen = Math.max(data[i][1].length, maxLen);
+      // }
 
-      for (let i = 0; i < data.length; i++) {
-        let len = data[i][1].length;
-        for (let j = len; j < maxLen; j++) {
-          data[i][1].push(0, 0, 0);
-        }
-      }
+      // for (let i = 0; i < data.length; i++) {
+      //   let len = data[i][1].length;
+      //   for (let j = len; j < maxLen; j++) {
+      //     data[i][1].push(0, 0, 0);
+      //   }
+      // }
       window.data = data;
 
       for (let i = 0; i < data.length; i++) {
@@ -467,7 +467,7 @@ export const createGlobe = {
   },
   mounted() {
     //we have to load the texture when it's mounted and pass it in
-    let earthmap = THREE.ImageUtils.loadTexture('/world4.jpg');
+    let earthmap = THREE.ImageUtils.loadTexture('/world5.jpg');
     this.initGlobe(earthmap);
   }
 };
