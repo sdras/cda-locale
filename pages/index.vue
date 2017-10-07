@@ -132,6 +132,10 @@ input[type="text"] {
     width: 80vw;
     overflow: scroll;
   }
+
+  h1 {
+    width: 60vw;
+  }
 }
 
 @media (min-width: 600px) {

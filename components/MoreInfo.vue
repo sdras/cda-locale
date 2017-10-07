@@ -38,6 +38,12 @@ export default {
   text-align: right;
 }
 
+@media (max-width: 800px) {
+  .findoutmore {
+    display: none;
+  }
+}
+
 .appear-enter-active,
 .appear-leave-active {
   transition: opacity .25s ease;
@@ -72,6 +78,4 @@ export default {
 .questionpath:hover {
   opacity: 1;
 }
-
-.beforeEnter {}
 </style>
