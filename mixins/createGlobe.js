@@ -473,7 +473,7 @@ export const createGlobe = {
   },
   mounted() {
     //we have to load the texture when it's mounted and pass it in
-    let earthmap = THREE.ImageUtils.loadTexture('/world5.jpg');
+    let earthmap = THREE.ImageUtils.loadTexture('/world4.jpg');
     this.initGlobe(earthmap);
   }
 };
