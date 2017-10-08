@@ -92,6 +92,15 @@ table {
   word-wrap: break;
 }
 
+@supports (-ms-ime-align: auto) {
+  /* Microsoft EdgeV13&14 CSS styles go here */
+  .scroll td {
+    padding: 3px 35px !important;
+    flex: none !important;
+    width: 130px;
+  }
+}
+
 .scroll thead tr:after {
   content: '';
   overflow-y: scroll;
