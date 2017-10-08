@@ -1,2 +1,2 @@
 [config]
-command = deploy-node.cmd
+command = deploy.cmd
