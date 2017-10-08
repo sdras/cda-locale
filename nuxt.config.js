@@ -18,7 +18,7 @@ module.exports = {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: 'https://c.s-microsoft.com/favicon.ico?v2'
+        href: '/favicon.ico'
       }
     ],
     link: [
