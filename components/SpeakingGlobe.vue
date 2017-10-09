@@ -1,12 +1,5 @@
 <template>
-  <div>
-    <div id="container"></div>
-
-    <!-- <div class="yeartoggle hidden">
-              <span v-for="year in yearsFlat" key="year" class="year" :id="year">{{year}}</span>
-              <span class="year" id="yearMicrosoft CDAs"></span>
-            </div> -->
-
+  <div id="container">
   </div>
 </template>
 
@@ -29,6 +22,7 @@ export default {
       return this.$store.state.speakerData;
     },
     yearsArr() {
+      //create it as an object first because that's more efficient than an array
       var endUnit = {};
 
       this.filteredData.forEach(function(index) {
