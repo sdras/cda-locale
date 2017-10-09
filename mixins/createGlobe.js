@@ -409,7 +409,6 @@ export const createGlobe = {
       };
 
       // this particular implementation
-
       const container = document.getElementById('container'),
         years = this.yearsFlat,
         globe = new DAT.Globe(container);
@@ -417,51 +416,17 @@ export const createGlobe = {
       let i,
         tweens = [];
 
-      const settime = function(globe, t) {
-        return function() {
-          globe.time = t / years.length;
-          let y = document.getElementById(years[t]);
-          if (y.getAttribute('class') === 'year active') {
-            return;
-          }
-          let yy = document.getElementsByClassName('year');
-          for (let i = 0; i < yy.length; i++) {
-            yy[i].setAttribute('class', 'year');
-          }
-          y.setAttribute('class', 'year active');
-        };
-      };
-
-      for (let i = 0; i < years.length; i++) {
-        let y = document.getElementById(years[i]);
-        y.addEventListener('mouseover', settime(globe, i), false);
-      }
-
       let data = this.yearsArr;
-      // Pad the data
-      let maxLen = 0;
-      for (let i = 0; i < data.length; i++) {
-        maxLen = Math.max(data[i][1].length, maxLen);
-      }
-
-      for (let i = 0; i < data.length; i++) {
-        let len = data[i][1].length;
-        for (let j = len; j < maxLen; j++) {
-          data[i][1].push(0, 0, 0);
-        }
-      }
-      console.log(data);
       window.data = data;
 
-      for (let i = 0; i < 1; i++) {
-        globe.addData(data[i][1], {
-          format: 'magnitude',
-          name: data[i][0],
-          animated: true
-        });
+      for (i = 0; i < data[0].length; i++) {
+        globe.addData(data[0][i], { format: 'magnitude', name: data[0][i] });
       }
+
+      // Create the geometry
       globe.createPoints();
-      settime(globe, 0)();
+
+      // Begin animation
       globe.animate();
       document.body.style.backgroundImage = 'none'; // remove loading
     }
@@ -473,7 +438,7 @@ export const createGlobe = {
   },
   mounted() {
     //we have to load the texture when it's mounted and pass it in
-    let earthmap = THREE.ImageUtils.loadTexture('/world4.jpg');
+    let earthmap = THREE.ImageUtils.loadTexture('/world7.jpg');
     this.initGlobe(earthmap);
   }
 };
