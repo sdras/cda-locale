@@ -2,9 +2,10 @@
   <div>
     <div id="container"></div>
 
-    <div class="yeartoggle hidden">
-      <span v-for="year in yearsFlat" key="year" class="year" :id="year">{{year}}</span>
-    </div>
+    <!-- <div class="yeartoggle hidden">
+              <span v-for="year in yearsFlat" key="year" class="year" :id="year">{{year}}</span>
+              <span class="year" id="yearMicrosoft CDAs"></span>
+            </div> -->
 
   </div>
 </template>
@@ -28,50 +29,42 @@ export default {
       return this.$store.state.speakerData;
     },
     yearsArr() {
-      //create it as an object first because that's more efficient than an array
-      let endUnit = {};
+      var endUnit = {};
+
       this.filteredData.forEach(function(index) {
         //we'll need to get the year from the end of the string
-        let year = index.From.substr(index.From.length - 4),
-          lat = index.Latitude,
+        let lat = index.Latitude,
           long = index.Longitude,
-          key = lat + ', ' + long,
-          magBase = 0.1;
+          key = lat + ", " + long,
+          magBase = 0.1,
+          val = 'Microsoft CDAs';
 
         if (lat === undefined || long === undefined) return;
-        //because the pins are grouped together by magnitude, as we build out the data, we need to check if one exists or increment the value
-        if (year in endUnit) {
 
+        if (val in endUnit) {
           //if we already have this location (stored together as key) let's increment it
-          if (key in endUnit[year]) {
-            endUnit[year][key][2] += magBase
+          if (key in endUnit[val]) {
+            endUnit[val][key][2] += magBase;
           } else {
-            endUnit[year][key] = [lat, long, magBase]
+            endUnit[val][key] = [lat, long, magBase];
           }
         } else {
           let y = {};
           y[key] = [lat, long, magBase];
-          endUnit[year] = y
+          endUnit[val] = y;
         }
-
-      })
+      });
 
       let x = Object.entries(endUnit);
       let area = [],
-        year,
-        places;
+        places,
+        all;
+
       for (let i = 0; i < x.length; i++) {
-        [year, places] = x[i];
-        area.push([year, [].concat(...Object.values(places))])
+        [all, places] = x[i];
+        area.push([all, [].concat(...Object.values(places))]);
       }
-      console.log(area)
       return area;
-    },
-    yearsFlat() {
-      //we really just need the two years so for easy retrieval, let's flatten and condense it
-      let x = [].concat.apply([], this.yearsArr);
-      x = x.filter((_, i) => (i + 1) % 2);
-      return x;
     }
   },
 }
