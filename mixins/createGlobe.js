@@ -431,11 +431,6 @@ export const createGlobe = {
       document.body.style.backgroundImage = 'none'; // remove loading
     }
   },
-  watcher: {
-    yearsArr() {
-      console.log('changed');
-    }
-  },
   mounted() {
     //we have to load the texture when it's mounted and pass it in
     let earthmap = THREE.ImageUtils.loadTexture('/world7.jpg');
