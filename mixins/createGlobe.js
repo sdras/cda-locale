@@ -410,13 +410,12 @@ export const createGlobe = {
 
       // this particular implementation
       const container = document.getElementById('container'),
-        years = this.yearsFlat,
         globe = new DAT.Globe(container);
 
       let i,
         tweens = [];
 
-      let data = this.yearsArr;
+      let data = this.teamsArr;
       window.data = data;
 
       for (i = 0; i < data[0].length; i++) {
