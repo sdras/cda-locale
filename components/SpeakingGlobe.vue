@@ -21,7 +21,7 @@ export default {
       // we're getting this data from the vuex store, so it's best as a computed value
       return this.$store.state.speakerData;
     },
-    yearsArr() {
+    teamsArr() {
       //create it as an object first because that's more efficient than an array
       var endUnit = {};
 
